@@ -106,10 +106,10 @@ class NVDSpider(scrapy.Spider):
         self.logger.info(f"Total time taken: {duration.total_seconds():.2f} seconds")
         
         # Write results to JSON file
-        with open('qnap_cves.json', 'w') as f:
+        with open('data/all_cves.json', 'w') as f:
             json.dump(self.results, f, indent=2)
         
-        self.logger.info(f"Results written to qnap_cves.json")
+        self.logger.info(f"Results written to all_cves.json")
 
 # In settings.py:
 # CONCURRENT_REQUESTS = 4
