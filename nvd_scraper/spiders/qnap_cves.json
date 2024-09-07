@@ -1,0 +1,692 @@
+[
+  {
+    "cve_id": "CVE-2024-6849",
+    "published_date": "September 07, 2024; 5:15:01 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/85e0e1c5-211f-434c-8cc8-1ca676a8c7c2?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-1596",
+    "published_date": "September 07, 2024; 8:15:11 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/499a1892-12b7-49d5-b65f-4f53a968a23a?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6010",
+    "published_date": "September 07, 2024; 8:15:12 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/fc04e676-e394-488e-a239-95af5f865613?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-8538",
+    "published_date": "September 07, 2024; 5:15:03 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/1bd308a4-7157-4bc6-a55b-c6a4a62510a9?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7620",
+    "published_date": "September 07, 2024; 8:15:12 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/7600e7df-725d-4877-b0bf-5329f814723f?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7112",
+    "published_date": "September 07, 2024; 8:15:12 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/5a7358cd-fec8-4a16-ae6b-14194bb63396?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-21897",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2024-21898",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2024-21903",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2023-51367",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2023-51368",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2024-21904",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-23"
+  },
+  {
+    "cve_id": "CVE-2024-27122",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-21"
+  },
+  {
+    "cve_id": "CVE-2024-21906",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-33"
+  },
+  {
+    "cve_id": "CVE-2024-27126",
+    "published_date": "September 06, 2024; 1:15:15 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-21"
+  },
+  {
+    "cve_id": "CVE-2024-27125",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-29"
+  },
+  {
+    "cve_id": "CVE-2024-32762",
+    "published_date": "September 06, 2024; 1:15:15 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-30"
+  },
+  {
+    "cve_id": "CVE-2024-38641",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-33"
+  },
+  {
+    "cve_id": "CVE-2024-38640",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-35"
+  },
+  {
+    "cve_id": "CVE-2024-32771",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-28"
+  },
+  {
+    "cve_id": "CVE-2024-32763",
+    "published_date": "September 06, 2024; 1:15:15 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-33"
+  },
+  {
+    "cve_id": "CVE-2023-47563",
+    "published_date": "September 06, 2024; 1:15:12 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-24"
+  },
+  {
+    "cve_id": "CVE-2023-50360",
+    "published_date": "September 06, 2024; 1:15:12 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-24"
+  },
+  {
+    "cve_id": "CVE-2023-50366",
+    "published_date": "September 06, 2024; 1:15:12 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2023-51366",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20"
+  },
+  {
+    "cve_id": "CVE-2024-38642",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-34"
+  },
+  {
+    "cve_id": "CVE-2024-8428",
+    "published_date": "September 06, 2024; 10:15:13 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/b5818587-0a52-4734-8f75-263b4ab5020e?source=cve"
+  },
+  {
+    "cve_id": "CVE-2023-34979",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-32"
+  },
+  {
+    "cve_id": "CVE-2023-34974",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-32"
+  },
+  {
+    "cve_id": "CVE-2023-39300",
+    "published_date": "September 06, 2024; 1:15:12 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-26"
+  },
+  {
+    "cve_id": "CVE-2023-39298",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-28"
+  },
+  {
+    "cve_id": "CVE-2023-45038",
+    "published_date": "September 06, 2024; 1:15:12 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-25"
+  },
+  {
+    "cve_id": "CVE-2022-27592",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description_source": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-22"
+  },
+  {
+    "cve_id": "CVE-2024-7493",
+    "published_date": "September 06, 2024; 10:15:12 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ec7f3e0c-a07c-4082-9b6b-12d0fbe0fdc8?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7599",
+    "published_date": "September 06, 2024; 10:15:13 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/41859e1c-1ae0-49f1-82d3-5af3c15994ef?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7611",
+    "published_date": "September 06, 2024; 10:15:13 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/f7580145-03da-4aff-b804-39125e7daad1?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7622",
+    "published_date": "September 06, 2024; 10:15:13 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2c8a6ff9-6aa8-4e0f-b058-759561a55508?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-8317",
+    "published_date": "September 06, 2024; 3:15:03 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/ac7f95c7-2159-4327-ba09-da7721f1312e?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6792",
+    "published_date": "September 06, 2024; 2:15:02 AM -0400",
+    "description_source": "WPScan",
+    "org_link": "https://wpscan.com/vulnerability/3c470edd-4b9b-461e-839f-f3a87f0060aa/"
+  },
+  {
+    "cve_id": "CVE-2024-8480",
+    "published_date": "September 06, 2024; 12:15:05 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/1e3e628f-b5e7-40fd-9d34-4a3b23e1e0e7?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7349",
+    "published_date": "September 06, 2024; 3:15:02 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/3a096506-b18e-419c-808b-6099baa628ce?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-8292",
+    "published_date": "September 06, 2024; 3:15:03 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/8fa4b5df-dc71-49de-880b-895eb1d9cdca?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-8427",
+    "published_date": "September 06, 2024; 3:15:03 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/e84b68b6-1ce8-45fb-823f-a61158aa4d21?source=cve"
+  },
+  {
+    "cve_id": "CVE-2023-52915",
+    "published_date": "September 06, 2024; 5:15:02 AM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0143f282b15f7cedc0392ea10050fb6000fd16e6"
+  },
+  {
+    "cve_id": "CVE-2023-52916",
+    "published_date": "September 06, 2024; 5:15:03 AM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/c281355068bc258fd619c5aefd978595bede7bfe"
+  },
+  {
+    "cve_id": "CVE-2024-8247",
+    "published_date": "September 06, 2024; 12:15:05 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2577102f-6355-4483-bd3d-1948497cb843?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7415",
+    "published_date": "September 06, 2024; 12:15:05 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/01707346-86c2-45c8-a2c9-81a147506fa4?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-45096",
+    "published_date": "September 05, 2024; 12:15:07 PM -0400",
+    "description_source": "IBM Corporation",
+    "org_link": "https://www.ibm.com/support/pages/node/7167255"
+  },
+  {
+    "cve_id": "CVE-2024-45097",
+    "published_date": "September 05, 2024; 12:15:08 PM -0400",
+    "description_source": "IBM Corporation",
+    "org_link": "https://www.ibm.com/support/pages/node/7167255"
+  },
+  {
+    "cve_id": "CVE-2024-45098",
+    "published_date": "September 05, 2024; 12:15:08 PM -0400",
+    "description_source": "IBM Corporation",
+    "org_link": "https://www.ibm.com/support/pages/node/7167255"
+  },
+  {
+    "cve_id": "CVE-2024-7605",
+    "published_date": "September 05, 2024; 7:15:13 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/1690631b-0e5d-45d1-9db6-6ac426874762?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-7380",
+    "published_date": "September 05, 2024; 7:15:12 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/280e1b4d-08be-4e77-abcb-5f9079111595?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6846",
+    "published_date": "September 05, 2024; 2:15:03 AM -0400",
+    "description_source": "WPScan",
+    "org_link": "https://wpscan.com/vulnerability/d48fdab3-669c-4870-a2f9-6c39a7c25fd8/"
+  },
+  {
+    "cve_id": "CVE-2024-7381",
+    "published_date": "September 05, 2024; 7:15:13 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/4ed7b13a-eec3-4035-8815-15228fb05af1?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6835",
+    "published_date": "September 05, 2024; 3:15:02 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/013f7c26-8348-4c54-af61-473a720a5095?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-5309",
+    "published_date": "September 05, 2024; 5:15:04 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/aba88c4c-93a4-4c1c-b239-68b5fec87146?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-8363",
+    "published_date": "September 05, 2024; 5:15:04 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/d01b6056-a38d-4a60-9cdc-68663aa2aed6?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6894",
+    "published_date": "September 05, 2024; 6:15:03 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/aa5075a8-1da1-4738-ad4b-b6c323d772ee?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6332",
+    "published_date": "September 05, 2024; 6:15:02 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/2ac1e3ee-4dcc-4f45-ad07-17af750da3d1?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-6929",
+    "published_date": "September 05, 2024; 6:15:03 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/6700e926-21c1-45c9-bca9-62ef0218e998?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-45107",
+    "published_date": "September 05, 2024; 5:15:03 AM -0400",
+    "description_source": "Adobe Systems Incorporated",
+    "org_link": "https://helpx.adobe.com/security/products/acrobat/apsb24-57.html"
+  },
+  {
+    "cve_id": "CVE-2022-3556",
+    "published_date": "September 05, 2024; 7:15:11 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/219de193-32d0-40b0-a471-bf8bf6e2bb62?source=cve"
+  },
+  {
+    "cve_id": "CVE-2022-4529",
+    "published_date": "September 05, 2024; 7:15:12 AM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/cd177a43-6059-4125-9408-1090b9a54117?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-45008",
+    "published_date": "September 04, 2024; 4:15:09 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/05dd9aabd04f9b5eb04dab9bb83d8c3e982d7549"
+  },
+  {
+    "cve_id": "CVE-2024-45007",
+    "published_date": "September 04, 2024; 4:15:09 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/409b495f8e3300d5fba08bc817fa8825dae48cc9"
+  },
+  {
+    "cve_id": "CVE-2024-45399",
+    "published_date": "September 04, 2024; 4:15:09 PM -0400",
+    "description_source": "GitHub, Inc.",
+    "org_link": "https://github.com/indico/indico/security/advisories/GHSA-rrqf-w74j-24ff"
+  },
+  {
+    "cve_id": "CVE-2024-7627",
+    "published_date": "September 04, 2024; 11:15:03 PM -0400",
+    "description_source": "Wordfence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/id/5f29de7a-3f15-4b6d-aad7-6a08151e2113?source=cve"
+  },
+  {
+    "cve_id": "CVE-2024-45288",
+    "published_date": "September 05, 2024; 12:15:07 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:09.libnv.asc"
+  },
+  {
+    "cve_id": "CVE-2024-41928",
+    "published_date": "September 05, 2024; 12:15:06 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:10.bhyve.asc"
+  },
+  {
+    "cve_id": "CVE-2024-43102",
+    "published_date": "September 05, 2024; 1:15:13 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:14.umtx.asc"
+  },
+  {
+    "cve_id": "CVE-2024-45287",
+    "published_date": "September 05, 2024; 12:15:07 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:09.libnv.asc"
+  },
+  {
+    "cve_id": "CVE-2024-8178",
+    "published_date": "September 05, 2024; 1:15:13 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:11.ctl.asc"
+  },
+  {
+    "cve_id": "CVE-2024-32668",
+    "published_date": "September 05, 2024; 1:15:13 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:12.bhyve.asc"
+  },
+  {
+    "cve_id": "CVE-2024-42416",
+    "published_date": "September 05, 2024; 1:15:13 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:11.ctl.asc"
+  },
+  {
+    "cve_id": "CVE-2024-43110",
+    "published_date": "September 05, 2024; 1:15:13 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:11.ctl.asc"
+  },
+  {
+    "cve_id": "CVE-2024-45063",
+    "published_date": "September 05, 2024; 1:15:13 AM -0400",
+    "description_source": "FreeBSD",
+    "org_link": "https://security.freebsd.org/advisories/FreeBSD-SA-24:11.ctl.asc"
+  },
+  {
+    "cve_id": "CVE-2024-45000",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0a4d41fa14b2a0efd40e350cfe8ec6a4c998ac1d"
+  },
+  {
+    "cve_id": "CVE-2024-44998",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/09e086a5f72ea27c758b3f3b419a69000c32adc1"
+  },
+  {
+    "cve_id": "CVE-2024-44996",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/69139d2919dd4aa9a553c8245e7c63e82613e3fc"
+  },
+  {
+    "cve_id": "CVE-2024-44993",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/497d370a644d95a9f04271aa92cb96d32e84c770"
+  },
+  {
+    "cve_id": "CVE-2024-44994",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/cc6bc2ab1663ec9353636416af22452b078510e9"
+  },
+  {
+    "cve_id": "CVE-2024-44999",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/137d565ab89ce3584503b443bc9e00d44f482593"
+  },
+  {
+    "cve_id": "CVE-2024-44995",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/195918217448a6bb7f929d6a2ffffce9f1ece1cc"
+  },
+  {
+    "cve_id": "CVE-2024-44997",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/326a89321f9d5fe399fe6f9ff7c0fc766582a6a0"
+  },
+  {
+    "cve_id": "CVE-2024-45001",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/32316f676b4ee87c0404d333d248ccf777f739bc"
+  },
+  {
+    "cve_id": "CVE-2024-45003",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/03880af02a78bc9a98b5a581f529cf709c88a9b8"
+  },
+  {
+    "cve_id": "CVE-2024-45005",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/027ac3c5092561bccce09b314a73a1c167117ef6"
+  },
+  {
+    "cve_id": "CVE-2024-45002",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/753f1745146e03abd17eec8eee95faffc96d743d"
+  },
+  {
+    "cve_id": "CVE-2024-45004",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0e28bf61a5f9ab30be3f3b4eafb8d097e39446bb"
+  },
+  {
+    "cve_id": "CVE-2024-45006",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0f0654318e25b2c185e245ba4a591e42fabb5e59"
+  },
+  {
+    "cve_id": "CVE-2024-44987",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/24e93695b1239fbe4c31e224372be77f82dab69a"
+  },
+  {
+    "cve_id": "CVE-2024-44988",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/050e7274ab2150cd212b2372595720e7b83a15bd"
+  },
+  {
+    "cve_id": "CVE-2024-44991",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/565d121b69980637f040eb4d84289869cdaabedf"
+  },
+  {
+    "cve_id": "CVE-2024-44992",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/74c2ab6d653b4c2354df65a7f7f2df1925a40a51"
+  },
+  {
+    "cve_id": "CVE-2024-44990",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0707260a18312bbcd2a5668584e3692d0a29e3f6"
+  },
+  {
+    "cve_id": "CVE-2024-44989",
+    "published_date": "September 04, 2024; 4:15:08 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/21816b696c172c19d53a30d45ee005cce246ed21"
+  },
+  {
+    "cve_id": "CVE-2024-44980",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/f4b2a0ae1a31fd3d1b5ca18ee08319b479cf9b5f"
+  },
+  {
+    "cve_id": "CVE-2024-44979",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/a6f78359ac75f24cac3c1bdd753c49c1877bcd82"
+  },
+  {
+    "cve_id": "CVE-2024-44976",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/709e4c8f78e156ab332297bdd87527ec3da4e2d4"
+  },
+  {
+    "cve_id": "CVE-2024-44977",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/50553ea7cbd3344fbf40afb065f6a2d38171c1ad"
+  },
+  {
+    "cve_id": "CVE-2024-44978",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/98aa0330f200b9b8fb9e1298e006eda57a13351c"
+  },
+  {
+    "cve_id": "CVE-2024-44983",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0279c35d242d037abeb73d60d06a6d1bb7f672d9"
+  },
+  {
+    "cve_id": "CVE-2024-44982",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/02193c70723118889281f75b88722b26b58bf4ae"
+  },
+  {
+    "cve_id": "CVE-2024-44981",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/38f7e14519d39cf524ddc02d4caee9b337dad703"
+  },
+  {
+    "cve_id": "CVE-2024-44968",
+    "published_date": "September 04, 2024; 3:15:31 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/541a900d245536d4809cb1aa322c3fcc2cdb58a6"
+  },
+  {
+    "cve_id": "CVE-2024-44969",
+    "published_date": "September 04, 2024; 3:15:31 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/1e8b7fb427af6b2ddd54eff66a6b428a81c96633"
+  },
+  {
+    "cve_id": "CVE-2024-44984",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/8baeef7616d5194045c5a6b97fd1246b87c55b13"
+  },
+  {
+    "cve_id": "CVE-2024-44972",
+    "published_date": "September 04, 2024; 3:15:31 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/97713b1a2ced1e4a2a6c40045903797ebd44d7e0"
+  },
+  {
+    "cve_id": "CVE-2024-44970",
+    "published_date": "September 04, 2024; 3:15:31 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/50d8009a0ac02c3311b23a0066511f8337bd88d9"
+  },
+  {
+    "cve_id": "CVE-2024-44985",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/124b428fe28064c809e4237b0b38e97200a8a4a8"
+  },
+  {
+    "cve_id": "CVE-2024-44971",
+    "published_date": "September 04, 2024; 3:15:31 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/7feef10768ea71d468d9bbc1e0d14c461876768c"
+  },
+  {
+    "cve_id": "CVE-2024-44986",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/3574d28caf9a09756ae87ad1ea096c6f47b6101e"
+  },
+  {
+    "cve_id": "CVE-2024-44974",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/0201d65d9806d287a00e0ba96f0321835631f63f"
+  },
+  {
+    "cve_id": "CVE-2024-44973",
+    "published_date": "September 04, 2024; 3:15:31 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/a371d558e6f3aed977a8a7346350557de5d25190"
+  },
+  {
+    "cve_id": "CVE-2024-44975",
+    "published_date": "September 04, 2024; 4:15:07 PM -0400",
+    "description_source": "kernel.org",
+    "org_link": "https://git.kernel.org/stable/c/73d6c6cf8ef6a3c532aa159f5114077746a372d6"
+  }
+]
