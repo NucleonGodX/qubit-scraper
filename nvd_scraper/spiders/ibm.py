@@ -46,7 +46,16 @@ class IBMVulnerabilitySpider(scrapy.Spider):
         affected_products = response.css('div.field--name-field-affected-products table tbody tr').getall()
         affected_products = [remove_tags(product).strip() for product in affected_products]
 
-        recommendations = response.css('div.field--name-field-remediation-fixes p::text').get()
+        # Extract product name, platform, and fix link
+        product_name = response.css('div.field--name-field-affected-products table tbody tr td:first-child::text').get()
+        platform = response.css('div.field--name-field-affected-products table tbody tr td:nth-child(2)::text').get()
+        fix_link = response.css('div.field--name-field-remediation-fixes a::attr(href)').get()
+
+        # Create recommendation sentence
+        if product_name and platform and fix_link:
+            recommendations = f"For {product_name} on {platform} platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: {fix_link}"
+        else:
+            recommendations = "It is recommended to apply the fix as soon as possible, see the IBM security bulletin for more details."
 
         scraped_item = {
             'cve_id': ', '.join(cve_ids) or item.get('cve_id'),
@@ -54,11 +63,10 @@ class IBMVulnerabilitySpider(scrapy.Spider):
             'description_source': "IBM",
             'org_link': response.url,
             'release_date': self.format_date(published_date) if published_date else item.get('published_date'),
-            'cve_ids': ' | '.join(cve_ids) or item.get('cve_id'),
             'severity': severity or item.get('severity'),
             'summary': summary or item.get('summary'),
             'affected_products': affected_products,
-            'recommendations': recommendations or item.get('recommendations')
+            'recommendations': recommendations
         }
         
         self.items.append(scraped_item)
@@ -66,7 +74,27 @@ class IBMVulnerabilitySpider(scrapy.Spider):
         yield scraped_item
 
     def get_severity(self, response):
+        # Look for severity information in multiple locations
+        severity_text = response.css('div.field--name-field-vulnerability-details::text').get()
+        if not severity_text:
+            severity_text = response.css('div.field--name-field-vulnerability-details span::text').get()
+        
+        if severity_text:
+            severity_text = severity_text.lower()
+            if 'critical' in severity_text:
+                return "Critical"
+            elif 'high' in severity_text:
+                return "High"
+            elif 'medium' in severity_text:
+                return "Medium"
+            elif 'low' in severity_text:
+                return "Low"
+        
+        # If no direct severity text found, try to extract CVSS score
         cvss_scores = response.css('div.field--name-field-vulnerability-details::text').re(r'CVSS Base score: (\d+\.\d+)')
+        if not cvss_scores:
+            cvss_scores = response.css('div.field--name-field-vulnerability-details span::text').re(r'(\d+\.\d+)')
+
         if cvss_scores:
             max_score = max(float(score) for score in cvss_scores)
             if max_score >= 9.0:

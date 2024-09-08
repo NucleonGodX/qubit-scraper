@@ -62,7 +62,6 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
             'description_source': "WordFence",
             'org_link': response.url,
             'release_date': self.format_date(published_date) if published_date else item.get('published_date'),
-            'cve_ids': cve_id or item.get('cve_id'),
             'severity': severity or item.get('severity'),
             'summary': summary or item.get('summary'),
             'affected_products': affected_products,
