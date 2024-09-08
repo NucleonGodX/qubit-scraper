@@ -1,6 +1,8 @@
 import scrapy
 import json
 from w3lib.html import remove_tags
+from scrapy.http import HtmlResponse
+import requests
 
 class QNAPAdvisorySpider(scrapy.Spider):
     name = 'qnap_advisory'
@@ -12,56 +14,59 @@ class QNAPAdvisorySpider(scrapy.Spider):
     def start_requests(self):
         try:
             with open('data/all_cves.json', 'r') as f:
-                data = json.load(f)
-            self.logger.info(f"Successfully loaded input.json with {len(data)} items")
+                self.data = json.load(f)
+            self.logger.info(f"Successfully loaded all_cves.json with {len(self.data)} items")
         except FileNotFoundError:
-            self.logger.error("input.json file not found. Make sure it exists in the spider's directory.")
+            self.logger.error("all_cves.json file not found. Make sure it exists in the spider's directory.")
             return
         except json.JSONDecodeError:
-            self.logger.error("Error decoding input.json. Make sure it's valid JSON.")
+            self.logger.error("Error decoding all_cves.json. Make sure it's valid JSON.")
             return
         
-        request_count = 0
-        for item in data:
+        # Yield a single dummy request to trigger the spider
+        yield scrapy.Request(url='https://example.com', callback=self.parse_all_items)
+
+    def parse_all_items(self, response):
+        for item in self.data:
             if 'QNAP' in item.get('description_source', ''):
-                yield scrapy.Request(url=item['org_link'], callback=self.parse, meta={'item': item}, errback=self.errback_httpbin)
-                request_count += 1
-        
-        self.logger.info(f"Generated {request_count} requests")
+                self.logger.info(f"Processing item for URL: {item['org_link']}")
+                yield self.process_item(item)
 
-    def parse(self, response):
-        self.logger.info(f"Parsing response from {response.url}")
-        item = response.meta['item']
-        
-        release_date = response.css('p.fs-6.mb-0::text').re_first(r'Release date : (.+)')
-        cve_ids = response.css('p.fs-6.mb-0::text').re_first(r'CVE identifier : (.+)')
-        severity = response.css('div.w-md-auto h4::text').get()
-        
-        # Updated selectors for summary and recommendations
-        summary = self.extract_section(response, 'Summary')
-        recommendations = self.extract_section(response, 'Recommendation')
-        
-        affected_products = response.css('table.table-bordered tr:not(:first-child)').getall()
+    def process_item(self, item):
+        try:
+            # Make a direct request to the URL
+            response = requests.get(item['org_link'])
+            html_response = HtmlResponse(url=item['org_link'], body=response.content, encoding='utf-8')
+            
+            release_date = html_response.css('p.fs-6.mb-0::text').re_first(r'Release date : (.+)')
+            severity = html_response.css('div.w-md-auto h4::text').get()
+            
+            summary = self.extract_section(html_response, 'Summary')
+            description = item['description_source']  # Use the description from the input data
+            recommendations = self.extract_section(html_response, 'Recommendation')
+            
+            affected_products = html_response.css('table.table-bordered tr:not(:first-child)').getall()
 
-        scraped_item = {
-            'cve_id': item['cve_id'],
-            'published_date': item['published_date'],
-            'description_source': item['description_source'],
-            'org_link': item['org_link'],
-            'release_date': release_date,
-            'cve_ids': cve_ids,
-            'severity': severity,
-            'summary': summary,
-            'affected_products': affected_products,
-            'recommendations': recommendations
-        }
-        
-        self.items.append(scraped_item)  # Add the scraped item to the list
-        self.logger.info(f"Scraped item for CVE-ID: {scraped_item['cve_id']}")
-        yield scraped_item
+            scraped_item = {
+                'cve_id': item['cve_id'],
+                'published_date': item['published_date'],
+                'description': description,
+                'org_link': item['org_link'],
+                'release_date': release_date,
+                'severity': severity,
+                'summary': summary,
+                'affected_products': affected_products,
+                'recommendations': recommendations
+            }
+            
+            self.items.append(scraped_item)
+            self.logger.info(f"Scraped item for CVE-ID: {scraped_item['cve_id']}")
+            return scraped_item
+        except Exception as e:
+            self.logger.error(f"Error processing item {item['cve_id']}: {str(e)}")
+            return None
 
     def extract_section(self, response, section_title):
-        # This method extracts content between h3 tags
         section = response.xpath(f'//h3[contains(text(), "{section_title}")]/following-sibling::*')
         content = []
         for element in section:
@@ -70,12 +75,7 @@ class QNAPAdvisorySpider(scrapy.Spider):
             content.append(element.get())
         return remove_tags(''.join(content)).strip()
 
-    def errback_httpbin(self, failure):
-        self.logger.error(f"Request failed: {failure}")
-
     def closed(self, reason):
-        # This method is called when the spider is closed
-        # Write the collected items to a JSON file
         with open('data/qnap_advisories_output.json', 'w') as f:
             json.dump(self.items, f, indent=2)
         self.logger.info(f"Spider closed. Wrote {len(self.items)} items to qnap_advisories_output.json")

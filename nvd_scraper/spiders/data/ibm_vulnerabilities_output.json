@@ -1,11 +1,10 @@
 [
   {
     "cve_id": "CVE-2024-40681,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297613, CVE-2024-40680,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297611, CVE-2024-37371,  https://exchange.xforce.ibmcloud.com/vulnerabilities/296013, CVE-2024-37370,  https://exchange.xforce.ibmcloud.com/vulnerabilities/296012",
-    "published_date": "September 07, 2024; 11:15:10 AM -0400",
+    "published_date": "September 07, 2024; 10:15:02 AM -0400",
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7167732",
-    "release_date": "September 07, 2024; 11:15:10 AM -0400",
-    "cve_ids": "CVE-2024-40681 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/297613 | CVE-2024-40680 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/297611 | CVE-2024-37371 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/296013 | CVE-2024-37370 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/296012",
+    "release_date": "September 07, 2024; 10:15:02 AM -0400",
     "severity": null,
     "summary": " Kerberos 5 and IBM MQ used by IBM MQ Operator and Queue Manager container images are vulnerable to denial of service due to improper memory allocation, and privilege escalation which may lead to bypassing security restrictions. This bulletin identifies the steps required to address these vulnerabilities.",
     "affected_products": [
@@ -13,24 +12,7 @@
       "IBM MQ Operator\nSC2 (formerly LTS): v3.2.0 - v3.2.3CD: \u00a0v3.0.0, v3.0.1, v3.1.0 - 3.1.3\nLTS: v2.0.0 - 2.0.25\nOther Release:\u00a0v2.4.0 - v2.4.8, v2.3.0 - 2.3.3, v2.2.0 - v2.2.2",
       "IBM supplied MQ Advanced container images\nCD: 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.3.4.0-r1, 9.3.4.1-r1,9.3.5.0-r1,9.3.5.0-r2,9.3.5.1-r1, 9.3.5.1-r2LTS:\u00a09.2.0.1-r1-eus, 9.2.0.2-r1-eus, 9.2.0.2-r2-eus, 9.2.0.4-r1-eus, 9.2.0.5-r1-eus,\u00a09.2.0.5-r2-eus, 9.2.0.5-r3-eus, 9.2.0.6-r1-eus, 9.2.0.6-r2-eus, 9.2.0.6-r3-eus, 9.2.3.0-r1,\u00a09.2.4.0-r1, 9.2.5.0-r1, 9.2.5.0-r2, 9.2.5.0-r3, 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1,\u00a09.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2,\u00a09.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2\nOther Release:\u00a09.2.0.1-r1-eus, 9.2.0.2-r1-eus, 9.2.0.2-r2-eus, 9.2.0.4-r1-eus, 9.2.0.5-r1-eus, 9.2.0.5-r2-eus, 9.2.0.5-r3-eus, 9.2.0.6-r1-eus, 9.2.0.6-r2-eus, 9.2.0.6-r3-eus, 9.2.3.0-r1, 9.2.4.0-r1, 9.2.5.0-r1, 9.2.5.0-r2, 9.2.5.0-r3, 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4,\u00a0 9.3.0.3-r1,\u00a0 9.3.0.4-r1, 9.3.0.4-r2,\u00a0 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3,\u00a0 9.3.0.6-r1,\u00a0 9.3.1.0-r1, 9.3.1.0-r2, 9.3.1.0-r3, 9.3.1.1-r1, 9.3.2.0-r1, 9.3.2.0-r2, 9.3.2.1-r1, 9.3.2.1-r2,\u00a0 9.3.3.0-r1, 9.3.3.0-r2, 9.3.3.1-r1, 9.3.3.1-r2, 9.3.3.2-r1, 9.3.3.2-r2, 9.3.3.2-r3, ,9.3.3.3-r1, \u00a09.3.3.3-r2"
     ],
-    "recommendations": " "
-  },
-  {
-    "cve_id": "CVE-2024-37068,  https://exchange.xforce.ibmcloud.com/vulnerabilities/292799",
-    "published_date": "September 07, 2024; 10:15:02 AM -0400",
-    "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7167725",
-    "release_date": "September 07, 2024; 10:15:02 AM -0400",
-    "cve_ids": "CVE-2024-37068 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/292799",
-    "severity": null,
-    "summary": " There is a vulnerability in Manage Componenet  used by IBM Maximo Manage application in IBM Maximo Application Suite.",
-    "affected_products": [
-      "Affected Product(s)Version(s)",
-      "IBM Maximo Application Suite - Manage Component\nMAS 8.10 - Manage 8.6.16",
-      "IBM Maximo Application Suite - Manage Component\nMAS 8.11 - Manage 8.7.10",
-      "IBM Maximo Application Suite - Manage Component\nMAS 9.0.0 - Manage 9.0.1"
-    ],
-    "recommendations": " "
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://exchange.xforce.ibmcloud.com/vulnerabilities/296012"
   },
   {
     "cve_id": "CVE-2024-35118,  https://exchange.xforce.ibmcloud.com/vulnerabilities/290341",
@@ -38,32 +20,13 @@
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7166750",
     "release_date": "August 29, 2024; 12:15:08 PM -0400",
-    "cve_ids": "CVE-2024-35118 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/290341",
     "severity": null,
     "summary": " A vulnerability was identified and remediated in the IBM MaaS360 MDM for Android Application (Version 8.60 and Prior)",
     "affected_products": [
       "Affected Product(s)Version(s)",
       "Maas360 MDM for Android App\u00a06.31 - 8.60"
     ],
-    "recommendations": " "
-  },
-  {
-    "cve_id": "CVE-2024-39747,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297314",
-    "published_date": "August 30, 2024; 10:15:12 PM -0400",
-    "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7166947",
-    "release_date": "August 30, 2024; 10:15:12 PM -0400",
-    "cve_ids": "CVE-2024-39747 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/297314",
-    "severity": null,
-    "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE, which is impacted by CVE-2024-39747.",
-    "affected_products": [
-      "Affected Product(s)Version(s)",
-      "IBM Sterling Connect:Direct Web Services6.3.0",
-      "IBM Sterling Connect:Direct Web Services6.1.0",
-      "IBM Sterling Connect:Direct Web Services6.2.0",
-      "IBM Connect:Direct Web Services6.0"
-    ],
-    "recommendations": " "
+    "recommendations": "For Maas360 MDM for Android App on \u00a06.31 - 8.60 platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/docs/en/maas360?topic=guide-apps"
   },
   {
     "cve_id": "CVE-2022-43915,  https://exchange.xforce.ibmcloud.com/vulnerabilities/241037",
@@ -71,7 +34,6 @@
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7166463",
     "release_date": "August 24, 2024; 8:15:04 AM -0400",
-    "cve_ids": "CVE-2022-43915 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/241037",
     "severity": null,
     "summary": " IBM App Connect Enterprise Certified Container operands are vulnerable to privilege escalation due to not limiting the unshare command.  This bulletin provides patch information to address the reported vulnerability. [CVE-2022-43915]",
     "affected_products": [
@@ -97,22 +59,24 @@
       "App Connect Enterprise Certified Container12.0-lts",
       "App Connect Enterprise Certified Container12.1"
     ],
-    "recommendations": " "
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/docs/en/app-connect/containers_cd?topic=releases-upgrading-operator"
   },
   {
-    "cve_id": "CVE-2024-45076,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351740, CVE-2024-45075,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351738, CVE-2024-45074,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351729",
-    "published_date": "September 04, 2024; 12:15:08 PM -0400",
+    "cve_id": "CVE-2024-39747,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297314",
+    "published_date": "August 30, 2024; 10:15:12 PM -0400",
     "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7167245",
-    "release_date": "September 04, 2024; 12:15:08 PM -0400",
-    "cve_ids": "CVE-2024-45076 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/351740 | CVE-2024-45075 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/351738 | CVE-2024-45074 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/351729",
+    "org_link": "https://www.ibm.com/support/pages/node/7166947",
+    "release_date": "August 30, 2024; 10:15:12 PM -0400",
     "severity": null,
-    "summary": " An authenticated developer user can utilize webMethods Integration Server to create a user through the scheduler service and then elevate that user to an administrator using runAsUser. This action provides elevated privileges for the developer user. webMethods Integration Server could potentially allow an authenticated developer user to write an OSCommand.cnf file and then execute arbitrary commands on the server. webMethods Integration Server may also allow an authenticated developer to read /../.. files, even after checkFileRead is set.",
+    "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE, which is impacted by CVE-2024-39747.",
     "affected_products": [
       "Affected Product(s)Version(s)",
-      "IBM webMethods Integration10.15"
+      "IBM Sterling Connect:Direct Web Services6.3.0",
+      "IBM Sterling Connect:Direct Web Services6.1.0",
+      "IBM Sterling Connect:Direct Web Services6.2.0",
+      "IBM Connect:Direct Web Services6.0"
     ],
-    "recommendations": " "
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/options?selectionBean.selectedTab=find&selection=ibm%2fOther+software%3bibm%2fOther+software%2fIBM+Connect%3aDirect+Web+Services"
   },
   {
     "cve_id": "CVE-2024-35133,  https://exchange.xforce.ibmcloud.com/vulnerabilities/291026",
@@ -120,7 +84,6 @@
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7166712",
     "release_date": "August 29, 2024; 1:15:07 PM -0400",
-    "cve_ids": "CVE-2024-35133 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/291026",
     "severity": null,
     "summary": " An issue found in the IBM Security Verify Access OIDC code could allow a remote attacker to cause a Redirect URL vulerability",
     "affected_products": [
@@ -128,25 +91,37 @@
       "IBM Security Verify Access10.0.0 - 10.0.8",
       "IBM Security Verify Access Docker10.0.0 - 10.0.8"
     ],
-    "recommendations": " "
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://docs.verify.ibm.com/ibm-security-verify-access/docs/containers"
   },
   {
-    "cve_id": "CVE-2024-39746,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297313",
-    "published_date": "August 22, 2024; 7:15:13 AM -0400",
+    "cve_id": "CVE-2024-37068,  https://exchange.xforce.ibmcloud.com/vulnerabilities/292799",
+    "published_date": "September 07, 2024; 10:15:02 AM -0400",
     "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7166018",
-    "release_date": "August 22, 2024; 7:15:13 AM -0400",
-    "cve_ids": "CVE-2024-39746 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/297313",
+    "org_link": "https://www.ibm.com/support/pages/node/7167725",
+    "release_date": "September 07, 2024; 10:15:02 AM -0400",
     "severity": null,
-    "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE. This bulletin identifies the steps to take to address the vulnerabilities.",
+    "summary": " There is a vulnerability in Manage Componenet  used by IBM Maximo Manage application in IBM Maximo Application Suite.",
     "affected_products": [
       "Affected Product(s)Version(s)",
-      "IBM Sterling Connect:Direct Web Services6.3.0",
-      "IBM Sterling Connect:Direct Web Services6.1.0",
-      "IBM Sterling Connect:Direct Web Services6.2.0",
-      "IBM Connect:Direct Web Services6.0"
+      "IBM Maximo Application Suite - Manage Component\nMAS 8.10 - Manage 8.6.16",
+      "IBM Maximo Application Suite - Manage Component\nMAS 8.11 - Manage 8.7.10",
+      "IBM Maximo Application Suite - Manage Component\nMAS 9.0.0 - Manage 9.0.1"
     ],
-    "recommendations": " "
+    "recommendations": "For IBM Maximo Application Suite - Manage Component on \n platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=upgrading"
+  },
+  {
+    "cve_id": "CVE-2024-45076,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351740, CVE-2024-45075,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351738, CVE-2024-45074,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351729",
+    "published_date": "September 04, 2024; 12:15:08 PM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7167245",
+    "release_date": "September 04, 2024; 12:15:08 PM -0400",
+    "severity": null,
+    "summary": " An authenticated developer user can utilize webMethods Integration Server to create a user through the scheduler service and then elevate that user to an administrator using runAsUser. This action provides elevated privileges for the developer user. webMethods Integration Server could potentially allow an authenticated developer user to write an OSCommand.cnf file and then execute arbitrary commands on the server. webMethods Integration Server may also allow an authenticated developer to read /../.. files, even after checkFileRead is set.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM webMethods Integration10.15"
+    ],
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://documentation.softwareag.com/a_installer_and_update_manager/Using_SAG_Update_Manager_for_10-5_and_later/#page/sag-update-manager-help%2Fta-checking_for_fixes_on_empower.html%23"
   },
   {
     "cve_id": "CVE-2024-45097,  https://exchange.xforce.ibmcloud.com/vulnerabilities/352470, CVE-2024-45096,  https://exchange.xforce.ibmcloud.com/vulnerabilities/352464, CVE-2024-45098,  https://exchange.xforce.ibmcloud.com/vulnerabilities/352482",
@@ -154,48 +129,13 @@
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7167255",
     "release_date": "September 05, 2024; 12:15:07 PM -0400",
-    "cve_ids": "CVE-2024-45097 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/352470 | CVE-2024-45096 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/352464 | CVE-2024-45098 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/352482",
     "severity": null,
     "summary": " This Security Bulletin addresses multiple vulnerabilities that have been remediated in IBM Aspera Faspex 5.0.10",
     "affected_products": [
       "Affected Product(s)Version(s)",
       "Aspera Faspex 55.0.0 - 5.0.9"
     ],
-    "recommendations": " "
-  },
-  {
-    "cve_id": "CVE-2024-35151,  https://exchange.xforce.ibmcloud.com/vulnerabilities/292638",
-    "published_date": "August 22, 2024; 7:15:13 AM -0400",
-    "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7165959",
-    "release_date": "August 22, 2024; 7:15:13 AM -0400",
-    "cve_ids": "CVE-2024-35151 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/292638",
-    "severity": null,
-    "summary": " A vulnerability caused by improper authorization checks could allow authenticated users access to sensitive information through APIs.",
-    "affected_products": [
-      "Affected Product(s)Version(s)",
-      "IBM OpenPages9.0",
-      "IBM OpenPages with WatsonIBM OpenPages with Watson 8.3"
-    ],
-    "recommendations": " "
-  },
-  {
-    "cve_id": "CVE-2024-39745,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297312",
-    "published_date": "August 22, 2024; 7:15:13 AM -0400",
-    "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7166195",
-    "release_date": "August 22, 2024; 7:15:13 AM -0400",
-    "cve_ids": "CVE-2024-39745 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/297312",
-    "severity": null,
-    "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE which is affected by CVE-2024-39745.",
-    "affected_products": [
-      "Affected Product(s)Version(s)",
-      "IBM Sterling Connect:Direct Web Services6.3.0",
-      "IBM Sterling Connect:Direct Web Services6.1.0",
-      "IBM Sterling Connect:Direct Web Services6.2.0",
-      "IBM Connect:Direct Web Services6.0"
-    ],
-    "recommendations": " "
+    "recommendations": "For Aspera Faspex 5 on 5.0.0 - 5.0.9 platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/swg/downloadFixes?parent=ibm%7EOther%20software&product=ibm/Other+software/IBM+Aspera+Faspex+Server&release=All&platform=All&function=fixId&fixids=ibm-aspera-faspex-5.0.10.7849.x86_64&includeRequisites=1&includeSupersedes=0&downloadMethod=http"
   },
   {
     "cve_id": "CVE-2024-39744,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297236",
@@ -203,7 +143,6 @@
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7166196",
     "release_date": "August 22, 2024; 7:15:13 AM -0400",
-    "cve_ids": "CVE-2024-39744 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/297236",
     "severity": null,
     "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE, which is vulnerable to CVE-2024-39744.",
     "affected_products": [
@@ -213,39 +152,22 @@
       "IBM Sterling Connect:Direct Web Services6.2.0",
       "IBM Connect:Direct Web Services6.0"
     ],
-    "recommendations": " "
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/options?selectionBean.selectedTab=find&selection=ibm%2fOther+software%3bibm%2fOther+software%2fIBM+Connect%3aDirect+Web+Services"
   },
   {
-    "cve_id": "CVE-2022-33162,  https://exchange.xforce.ibmcloud.com/vulnerabilities/228570",
-    "published_date": "August 16, 2024; 3:15:06 PM -0400",
+    "cve_id": "CVE-2024-35151,  https://exchange.xforce.ibmcloud.com/vulnerabilities/292638",
+    "published_date": "August 22, 2024; 7:15:13 AM -0400",
     "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7161442",
-    "release_date": "August 16, 2024; 3:15:06 PM -0400",
-    "cve_ids": "CVE-2022-33162 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/228570",
+    "org_link": "https://www.ibm.com/support/pages/node/7165959",
+    "release_date": "August 22, 2024; 7:15:13 AM -0400",
     "severity": null,
-    "summary": " IBM Security Directory Integrator has addressed an issue where it did not perform authentication.",
+    "summary": " A vulnerability caused by improper authorization checks could allow authenticated users access to sensitive information through APIs.",
     "affected_products": [
       "Affected Product(s)Version(s)",
-      "IBM Security Directory Integrator7.2.0",
-      "IBM Security Verify Directory Integrator\u00a010.0.0"
+      "IBM OpenPages9.0",
+      "IBM OpenPages with WatsonIBM OpenPages with Watson 8.3"
     ],
-    "recommendations": " "
-  },
-  {
-    "cve_id": "CVE-2024-41773,  https://exchange.xforce.ibmcloud.com/vulnerabilities/350347",
-    "published_date": "August 20, 2024; 4:15:08 PM -0400",
-    "description_source": "IBM",
-    "org_link": "https://www.ibm.com/support/pages/node/7165963",
-    "release_date": "August 20, 2024; 4:15:08 PM -0400",
-    "cve_ids": "CVE-2024-41773 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/350347",
-    "severity": null,
-    "summary": " IBM Global Configuration Management is vulnerable to archiving a global baseline by an authenticated user having improper access controls/permissions. This bulletin contains information regarding the vulnerability and remediation actions.",
-    "affected_products": [
-      "Affected Product(s)\u00a0 Version(s)",
-      "Global Configuration Management\u00a0 7.0.3",
-      "Global Configuration Management\u00a0 7.0.2"
-    ],
-    "recommendations": " "
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/pages/openpages-watson-83-fix-pack-3"
   },
   {
     "cve_id": "CVE-2023-47728,  https://exchange.xforce.ibmcloud.com/vulnerabilities/272201",
@@ -253,7 +175,6 @@
     "description_source": "IBM",
     "org_link": "https://www.ibm.com/support/pages/node/7161427",
     "release_date": "August 16, 2024; 4:15:09 PM -0400",
-    "cve_ids": "CVE-2023-47728 |  https://exchange.xforce.ibmcloud.com/vulnerabilities/272201",
     "severity": null,
     "summary": " IBM QRadar Suite software is vulnerable to information exposure through a detailed technical error message. This has been updated in the latest release and vulnerabilities have been addressed. Please follow the instructions in the Remediation/Fixes section below to update to the latest version.",
     "affected_products": [
@@ -261,6 +182,70 @@
       "IBM Cloud Pak for Security1.10.0.0 - 1.10.11.0",
       "QRadar Suite Software\n1.10.12.0 - 1.10.22.0"
     ],
-    "recommendations": " "
+    "recommendations": "For IBM Cloud Pak for Security on 1.10.0.0 - 1.10.11.0 platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/docs/en/cloud-paks/cp-security/1.10?topic=installing-upgrading-cloud-pak-security"
+  },
+  {
+    "cve_id": "CVE-2024-39746,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297313",
+    "published_date": "August 22, 2024; 7:15:13 AM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7166018",
+    "release_date": "August 22, 2024; 7:15:13 AM -0400",
+    "severity": null,
+    "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE. This bulletin identifies the steps to take to address the vulnerabilities.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM Sterling Connect:Direct Web Services6.3.0",
+      "IBM Sterling Connect:Direct Web Services6.1.0",
+      "IBM Sterling Connect:Direct Web Services6.2.0",
+      "IBM Connect:Direct Web Services6.0"
+    ],
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/options?selectionBean.selectedTab=find&selection=ibm%2fOther+software%3bibm%2fOther+software%2fIBM+Connect%3aDirect+Web+Services"
+  },
+  {
+    "cve_id": "CVE-2024-39745,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297312",
+    "published_date": "August 22, 2024; 7:15:13 AM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7166195",
+    "release_date": "August 22, 2024; 7:15:13 AM -0400",
+    "severity": null,
+    "summary": " IBM Sterling Connect:Direct Web Service uses IBM Java SE which is affected by CVE-2024-39745.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM Sterling Connect:Direct Web Services6.3.0",
+      "IBM Sterling Connect:Direct Web Services6.1.0",
+      "IBM Sterling Connect:Direct Web Services6.2.0",
+      "IBM Connect:Direct Web Services6.0"
+    ],
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/options?selectionBean.selectedTab=find&selection=ibm%2fOther+software%3bibm%2fOther+software%2fIBM+Connect%3aDirect+Web+Services"
+  },
+  {
+    "cve_id": "CVE-2022-33162,  https://exchange.xforce.ibmcloud.com/vulnerabilities/228570",
+    "published_date": "August 16, 2024; 3:15:06 PM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7161442",
+    "release_date": "August 16, 2024; 3:15:06 PM -0400",
+    "severity": null,
+    "summary": " IBM Security Directory Integrator has addressed an issue where it did not perform authentication.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM Security Directory Integrator7.2.0",
+      "IBM Security Verify Directory Integrator\u00a010.0.0"
+    ],
+    "recommendations": "For IBM Security Directory Integrator on 7.2.0 platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/docs/en/svdi/10.0.0?topic=containers-images"
+  },
+  {
+    "cve_id": "CVE-2024-41773,  https://exchange.xforce.ibmcloud.com/vulnerabilities/350347",
+    "published_date": "August 20, 2024; 4:15:08 PM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7165963",
+    "release_date": "August 20, 2024; 4:15:08 PM -0400",
+    "severity": null,
+    "summary": " IBM Global Configuration Management is vulnerable to archiving a global baseline by an authenticated user having improper access controls/permissions. This bulletin contains information regarding the vulnerability and remediation actions.",
+    "affected_products": [
+      "Affected Product(s)\u00a0 Version(s)",
+      "Global Configuration Management\u00a0 7.0.3",
+      "Global Configuration Management\u00a0 7.0.2"
+    ],
+    "recommendations": "For \u00a0 Affected Product(s) on \u00a0 Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/swg/downloadFixes?parent=ibm%7ERational&product=ibm%2FRational%2FIBM+Engineering+Lifecycle+Management&release=7.0.2&platform=All&function=fixId&fixids=7.0.2-IBM-ELM-iFix030&includeSupersedes=0&downloadMethod=http&source=fc"
   }
 ]
