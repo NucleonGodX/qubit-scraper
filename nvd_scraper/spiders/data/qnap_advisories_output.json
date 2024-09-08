@@ -1,42 +1,43 @@
 [
   {
-    "cve_id": "CVE-2024-32762",
-    "published_date": "September 06, 2024; 1:15:15 PM -0400",
+    "cve_id": "CVE-2024-21897",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
     "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-30",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2024-32762",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "cve_ids": "CVE-2023-50361 | CVE-2023-50362 | CVE-2023-50363 | CVE-2023-50364 | CVE-2023-50366 | CVE-2023-51366 | CVE-2023-51367 | CVE-2023-51368 | CVE-2024-21897 | CVE-2024-21898 | CVE-2024-21903",
     "severity": "Medium",
-    "summary": "A cross-site scripting (XSS) vulnerability has been reported to affect QuLog Center. If exploited, the vulnerability could allow remote attackers to inject malicious code.\u00a0\u00a0We have already fixed the vulnerability in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQuLog Center 1.8.x\r\n\t\t\tQuLog Center 1.8.0.872 (2024/06/17) and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuLog Center 1.7.x\r\n\t\t\tQuLog Center 1.7.0.827 (2024/06/17) and later",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
     "affected_products": [
-      "<tr>\r\n\t\t\t<td>QuLog Center 1.7.x</td>\r\n\t\t\t<td>QuLog Center 1.7.0.827 (2024/06/17) and later</td>\r\n\t\t</tr>"
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
     ],
-    "recommendations": "To fix the vulnerability, we recommend updating QuLog Center to the latest version."
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
   },
   {
-    "cve_id": "CVE-2024-27125",
-    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "cve_id": "CVE-2024-32771",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
     "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-29",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-28",
     "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2024-27125",
-    "severity": "Low",
-    "summary": "A cross-site scripting (XSS) vulnerability has been reported to affect Helpdesk. If exploited, the vulnerability could allow remote attackers who have gained administrator access to inject malicious code.\u00a0\u00a0We have already fixed the vulnerability in the following version:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tHelpdesk 3.3.x\r\n\t\t\tHelpdesk 3.3.1 and later",
-    "affected_products": [],
-    "recommendations": "To fix the vulnerability, we recommend updating Helpdesk to the latest version."
+    "cve_ids": "CVE-2024-32771 | CVE-2023-39298",
+    "severity": "Medium",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\r\n\tCVE-2024-32771:\u00a0If exploited, the improper restriction of excessive authentication attempts vulnerability could allow attackers to use bruce force attacks to gain privileged access.\r\n\tCVE-2023-39298: If exploited, the missing authorization vulnerability could allow local attackers who have gained user access to access data or perform actions without the proper privileges.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.2.0.2782 build 20240601 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.2.0.2782 build 20240601 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.2.0.2782 build 20240601 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
   },
   {
-    "cve_id": "CVE-2024-21904",
-    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "cve_id": "CVE-2023-34979",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
     "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-23",
-    "release_date": "May 21, 2024",
-    "cve_ids": "CVE-2024-21902 | CVE-2024-27127 | CVE-2024-27128 | CVE-2024-27129 | CVE-2024-27130",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-32",
+    "release_date": "September 7, 2024",
+    "cve_ids": "CVE-2023-34974 | CVE-2023-34979",
     "severity": "Medium",
-    "summary": "Multiple vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2024-21902: If exploited, the incorrect permission assignment for critical resources vulnerability could allow remote attackers who have gained user access to read or modify critical resources.\r\n\tCVE-2024-27127: If exploited, the double free vulnerability could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-27128, CVE-2024-27129, CVE-2024-27130: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-21904: If exploited, the path traversal vulnerability could allow remote users to read the contents of unexpected files and expose sensitive data.\r\n\u00a0\u00a0We have already fixed these vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.7.2770 build 20240520 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.7.2770 build 20240520 and later",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions.\u00a0\u00a0\r\n\tCVE-2023-34974: If exploited, the OS command injection vulnerability could allow remote attackers who have gained user access to inject malicious commands.\r\n\tCVE-2023-34979: If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 4.5.x\r\n\t\t\tQTS 4.5.4.2790 build 20240605 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h4.5.x\r\n\t\t\tQuTS hero h4.5.4.2790 build 20240606 and later",
     "affected_products": [
-      "<tr>\r\n\t\t\t<td width=\"40%\">QTS 5.1.x</td>\r\n\t\t\t<td width=\"60%\">QTS 5.1.7.2770 build 20240520 and later</td>\r\n\t\t</tr>",
-      "<tr>\r\n\t\t\t<td width=\"40%\">QuTS hero h5.1.x</td>\r\n\t\t\t<td width=\"60%\">QuTS hero h5.1.7.2770 build 20240520 and later</td>\r\n\t\t</tr>"
+      "<tr>\r\n\t\t\t<td>QuTS hero h4.5.x</td>\r\n\t\t\t<td>QuTS hero h4.5.4.2790 build 20240606 and later</td>\r\n\t\t</tr>"
     ],
     "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
   },
@@ -55,132 +56,17 @@
     "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
   },
   {
-    "cve_id": "CVE-2024-38642",
-    "published_date": "September 06, 2024; 1:15:16 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-34",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2024-38642",
-    "severity": "Medium",
-    "summary": "An improper certificate validation vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow local attackers who have gained user access to compromise the security of the system.\u00a0\u00a0We have already fixed the vulnerability in the following version:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQuMagie 2.3.x\r\n\t\t\tQuMagie 2.3.1 and later",
-    "affected_products": [],
-    "recommendations": "To fix the vulnerability, we recommend updating QuMagie to the latest version."
-  },
-  {
-    "cve_id": "CVE-2024-27122",
+    "cve_id": "CVE-2024-21904",
     "published_date": "September 06, 2024; 1:15:14 PM -0400",
     "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-21",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2024-27122 | CVE-2024-27126",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-23",
+    "release_date": "May 21, 2024",
+    "cve_ids": "CVE-2024-21902 | CVE-2024-27127 | CVE-2024-27128 | CVE-2024-27129 | CVE-2024-27130",
     "severity": "Medium",
-    "summary": "Multiple vulnerabilities have been reported to affect Notes Station 3:\r\n\tCVE-2024-27122, CVE-2024-27126: If exploited, the cross-site scripting (XSS) vulnerabilities could allow remote attackers who have gained user access to inject malicious code.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tNotes Station 3 3.9.x\r\n\t\t\tNotes Station 3 3.9.6 and later",
-    "affected_products": [],
-    "recommendations": "To fix the vulnerabilities, we recommend updating Notes Station 3 to the latest version."
-  },
-  {
-    "cve_id": "CVE-2024-21897",
-    "published_date": "September 06, 2024; 1:15:13 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
-    "release_date": "April 25, 2024",
-    "cve_ids": "CVE-2023-50361 | CVE-2023-50362 | CVE-2023-50363 | CVE-2023-50364 | CVE-2023-50366 | CVE-2023-51366 | CVE-2023-51367 | CVE-2023-51368 | CVE-2024-21897 | CVE-2024-21898 | CVE-2024-21903",
-    "severity": "Medium",
-    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "summary": "Multiple vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2024-21902: If exploited, the incorrect permission assignment for critical resources vulnerability could allow remote attackers who have gained user access to read or modify critical resources.\r\n\tCVE-2024-27127: If exploited, the double free vulnerability could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-27128, CVE-2024-27129, CVE-2024-27130: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-21904: If exploited, the path traversal vulnerability could allow remote users to read the contents of unexpected files and expose sensitive data.\r\n\u00a0\u00a0We have already fixed these vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.7.2770 build 20240520 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.7.2770 build 20240520 and later",
     "affected_products": [
-      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
-    ],
-    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
-  },
-  {
-    "cve_id": "CVE-2024-38640",
-    "published_date": "September 06, 2024; 1:15:16 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-35",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2024-38640",
-    "severity": "Medium",
-    "summary": "A cross-site scripting (XSS) vulnerability has been reported to affect Download Station. If exploited, the vulnerability could allow remote attackers who have gained user access to inject malicious code.\u00a0\u00a0We have already fixed the vulnerability in the following version:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tDownload Station 5.8.x\r\n\t\t\tDownload Station 5.8.6.283 (2024/06/21) and later",
-    "affected_products": [],
-    "recommendations": "To fix the vulnerability, we recommend updating Download Station to the latest version."
-  },
-  {
-    "cve_id": "CVE-2023-39300",
-    "published_date": "September 06, 2024; 1:15:12 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-26",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2023-39300",
-    "severity": "Medium",
-    "summary": "An OS command injection vulnerability has been reported to affect legacy versions of QTS. If exploited, the vulnerability could allow remote attackers who have gained administrator access to execute arbitrary commands on the operating system through an application's input.\u00a0\u00a0We have already fixed the vulnerability in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 4.3.6\r\n\t\t\tQTS 4.3.6.2805 build 20240619 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQTS 4.3.4\r\n\t\t\tQTS 4.3.4.2814 build 20240618 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQTS 4.3.3\r\n\t\t\tQTS 4.3.3.2784 build 20240619 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQTS 4.2.6\r\n\t\t\tQTS 4.2.6 build 20240618 and later",
-    "affected_products": [
-      "<tr>\r\n\t\t\t<td>QTS 4.3.4</td>\r\n\t\t\t<td>QTS 4.3.4.2814 build 20240618 and later</td>\r\n\t\t</tr>",
-      "<tr>\r\n\t\t\t<td>QTS 4.3.3</td>\r\n\t\t\t<td>QTS 4.3.3.2784 build 20240619 and later</td>\r\n\t\t</tr>",
-      "<tr>\r\n\t\t\t<td>QTS 4.2.6</td>\r\n\t\t\t<td>QTS 4.2.6 build 20240618 and later</td>\r\n\t\t</tr>"
-    ],
-    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
-  },
-  {
-    "cve_id": "CVE-2023-45038",
-    "published_date": "September 06, 2024; 1:15:12 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-25",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2023-45038",
-    "severity": "Medium",
-    "summary": "An improper authentication vulnerability has been reported to affect Music Station. If exploited, the vulnerability could allow remote attackers who have gained user access to compromise the security of the system.\u00a0\u00a0We have already fixed the vulnerability in the following version:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tMusic Station 5.x\r\n\t\t\tMusic Station 5.4.0 and later",
-    "affected_products": [],
-    "recommendations": "To fix the vulnerability, we recommend updating Music Station to the latest version."
-  },
-  {
-    "cve_id": "CVE-2024-32771",
-    "published_date": "September 06, 2024; 1:15:16 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-28",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2024-32771 | CVE-2023-39298",
-    "severity": "Medium",
-    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\r\n\tCVE-2024-32771:\u00a0If exploited, the improper restriction of excessive authentication attempts vulnerability could allow attackers to use bruce force attacks to gain privileged access.\r\n\tCVE-2023-39298: If exploited, the missing authorization vulnerability could allow local attackers who have gained user access to access data or perform actions without the proper privileges.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.2.0.2782 build 20240601 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.2.0.2782 build 20240601 and later",
-    "affected_products": [
-      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.2.0.2782 build 20240601 and later</td>\r\n\t\t</tr>"
-    ],
-    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
-  },
-  {
-    "cve_id": "CVE-2023-47563",
-    "published_date": "September 06, 2024; 1:15:12 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-24",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2023-47563 | CVE-2023-50360",
-    "severity": "High",
-    "summary": "Multiple vulnerabilities have been reported to affect Video Station:\r\n\tCVE-2023-47563: If exploited, the OS command injection vulnerability could allow remote attackers to execute arbitrary commands on the operating system through the application's input.\r\n\tCVE-2023-50360: If exploited, the SQL injection vulnerability could allow attackers to inject malicious code.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following version:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tVideo Station 5.x\r\n\t\t\tVideo Station 5.8.2 and later",
-    "affected_products": [],
-    "recommendations": "To fix the vulnerabilities, we recommend updating Video Station to the latest version."
-  },
-  {
-    "cve_id": "CVE-2022-27592",
-    "published_date": "September 06, 2024; 1:15:11 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-22",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2022-27592",
-    "severity": "Medium",
-    "summary": "An unquoted search path or element vulnerability has been reported to affect QVR Smart Client. If exploited, the vulnerability could allow attackers to execute unauthorized code or commands.\u00a0\u00a0We have already fixed the vulnerability in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQVR Smart Client 2.4.x\r\n\t\t\t\r\n\t\t\tQVR Smart Client 2.4.0.0570 and later\r\n\r\n\t\t\t(for Windows 10 SP1, Windows 11, and macOS)",
-    "affected_products": [],
-    "recommendations": "To secure your device, we recommend regularly updating your QNAP utilities to the latest versions to benefit from vulnerability fixes. You can check the QNAP Utilities\u00a0page to see the latest updates available to your device operating system."
-  },
-  {
-    "cve_id": "CVE-2023-34974",
-    "published_date": "September 06, 2024; 1:15:11 PM -0400",
-    "description_source": "QNAP Systems, Inc.",
-    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-32",
-    "release_date": "September 7, 2024",
-    "cve_ids": "CVE-2023-34974 | CVE-2023-34979",
-    "severity": "Medium",
-    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions.\u00a0\u00a0\r\n\tCVE-2023-34974: If exploited, the OS command injection vulnerability could allow remote attackers who have gained user access to inject malicious commands.\r\n\tCVE-2023-34979: If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 4.5.x\r\n\t\t\tQTS 4.5.4.2790 build 20240605 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h4.5.x\r\n\t\t\tQuTS hero h4.5.4.2790 build 20240606 and later",
-    "affected_products": [
-      "<tr>\r\n\t\t\t<td>QuTS hero h4.5.x</td>\r\n\t\t\t<td>QuTS hero h4.5.4.2790 build 20240606 and later</td>\r\n\t\t</tr>"
+      "<tr>\r\n\t\t\t<td width=\"40%\">QTS 5.1.x</td>\r\n\t\t\t<td width=\"60%\">QTS 5.1.7.2770 build 20240520 and later</td>\r\n\t\t</tr>",
+      "<tr>\r\n\t\t\t<td width=\"40%\">QuTS hero h5.1.x</td>\r\n\t\t\t<td width=\"60%\">QuTS hero h5.1.7.2770 build 20240520 and later</td>\r\n\t\t</tr>"
     ],
     "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
   }
