@@ -3,6 +3,14 @@ import json
 import subprocess
 from scrapy.crawler import CrawlerProcess
 from nvd_scraper.spiders.nvd_spider import NVDSpider
+from pymongo import MongoClient, errors
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+url = '***REMOVED***/?retryWrites=true&w=majority&appName=qubit-arvrs'
+db_name = 'arvrs'
+collection_name = 'vulnerability'
 
 def run_first_level_scraping():
     """Run the first level of scraping to generate the JSON file with links"""
@@ -30,26 +38,22 @@ def combine_json_files(output_file, *input_files):
     """Combine the contents of multiple JSON files and write to a new file."""
     combined_data = []
     
-    # Load and combine data from input files
     for file in input_files:
         data = load_json_file(file)
         if isinstance(data, list):
-            combined_data.extend(data)  # Append lists directly
+            combined_data.extend(data)
         else:
-            combined_data.append(data)  # Append single items (like dicts)
+            combined_data.append(data)
     
-    # Write the combined data to the output file
     with open(output_file, 'w') as out_file:
         json.dump(combined_data, out_file, indent=2)
     
-    # Delete the input files after combining
     for file in input_files:
         os.remove(file)
         print(f"Deleted file: {file}")
 
     print(f"Successfully combined {len(input_files)} files into {output_file}.")
 
-    # Delete the all_cves.json file
     all_cves_file = 'data/all_cves.json'
     if os.path.exists(all_cves_file):
         os.remove(all_cves_file)
@@ -57,22 +61,64 @@ def combine_json_files(output_file, *input_files):
     else:
         print(f"File {all_cves_file} not found, skipping deletion.")
 
-def main():
-    # Ensure the 'data' directory exists
+    return combined_data
+
+def insert_many_vulnerabilities(vulnerabilities):
+    """Insert many documents into MongoDB with duplicate handling."""
+    client = MongoClient(url)
+    db = client[db_name]
+    collection = db[collection_name]
+
+    try:
+        result = collection.insert_many(vulnerabilities, ordered=False)
+        print(f'{len(result.inserted_ids)} documents were inserted successfully')
+    except errors.BulkWriteError as bwe:
+        for error in bwe.details['writeErrors']:
+            if error['code'] == 11000:  # Duplicate key error code
+                print(f'Duplicate found and skipped: {error["errmsg"]}')
+            else:
+                print(f'Error: {error["errmsg"]}')
+    except Exception as e:
+        print(f'An error occurred: {e}')
+    finally:
+        client.close()
+
+def run_full_scraper():
+    """Run the full scraping process and insert data into MongoDB"""
     os.makedirs('data', exist_ok=True)
-
-    # Run the first level of scraping and wait for it to complete
     run_first_level_scraping()
-
-    # Run the second level of scraping in a new process
     run_second_level_scraping()
-
-    # Combine the JSON files after scraping completes
+    
     ibm_file = 'data/ibm_vulnerabilities_output.json'
     qnap_file = 'data/qnap_advisories_output.json'
     wordfence_file = 'data/wordfence_vulnerabilities_output.json'
+    
+    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file)
+    
+    insert_many_vulnerabilities(combined_data)
+    return len(combined_data)
 
-    combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file)
+@app.route('/run_scraper', methods=['POST'])
+def trigger_scraper():
+    try:
+        items_scraped = run_full_scraper()
+        return jsonify({"message": "Scraping process completed and data inserted into MongoDB", "items_scraped": items_scraped})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
-if __name__ == "__main__":
-    main()
+@app.route('/get_vulnerabilities', methods=['GET'])
+def get_vulnerabilities():
+    client = MongoClient(url)
+    db = client[db_name]
+    collection = db[collection_name]
+    
+    try:
+        vulnerabilities = list(collection.find({}, {'_id': 0}).limit(100)) 
+        return jsonify(vulnerabilities)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        client.close()
+
+if __name__ == '__main__':
+    app.run(debug=True)
