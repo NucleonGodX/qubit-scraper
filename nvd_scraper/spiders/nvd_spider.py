@@ -17,7 +17,7 @@ class NVDSpider(scrapy.Spider):
         self.logger.setLevel(logging.INFO)
         self.results = []
         self.page_count = 0
-        self.max_pages = 100
+        self.max_pages = 20
         self.target_orgs = ['ibm', 'qnap', 'word', 'adobe', 'symphony']
 
     def start_requests(self):
