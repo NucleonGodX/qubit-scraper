@@ -58,7 +58,7 @@ class IBMVulnerabilitySpider(scrapy.Spider):
             recommendations = "It is recommended to apply the fix as soon as possible, see the IBM security bulletin for more details."
 
         scraped_item = {
-            'cve_id': ', '.join(cve_ids) or item.get('cve_id'),
+            'cve_id':  item.get('cve_id'),
             'published_date': self.format_date(published_date) if published_date else item.get('published_date'),
             'description_source': "IBM",
             'org_link': response.url,

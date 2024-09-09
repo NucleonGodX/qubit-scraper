@@ -35,7 +35,6 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
         self.logger.info(f"Parsing response from {response.url}")
         item = response.meta['item']
 
-        cve_id = response.css('tr:contains("CVE") td.text-right a::text').get()
         published_date = response.css('tr:contains("Publicly Published") td.text-right::text').get()
         severity = response.css('tr:contains("CVSS") td.text-right::text').get()
         if severity:
@@ -57,7 +56,7 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
         recommendations = response.css('tr:contains("Remediation") td::text').get()
 
         scraped_item = {
-            'cve_id': cve_id or item.get('cve_id'),
+            'cve_id': item.get('cve_id'),
             'published_date': self.format_date(published_date) if published_date else item.get('published_date'),
             'description_source': "WordFence",
             'org_link': response.url,
