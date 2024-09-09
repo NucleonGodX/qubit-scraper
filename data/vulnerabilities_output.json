@@ -1,0 +1,971 @@
+[
+  {
+    "cve_id": "CVE-2024-45097,  https://exchange.xforce.ibmcloud.com/vulnerabilities/352470, CVE-2024-45096,  https://exchange.xforce.ibmcloud.com/vulnerabilities/352464, CVE-2024-45098,  https://exchange.xforce.ibmcloud.com/vulnerabilities/352482",
+    "published_date": "September 05, 2024; 12:15:08 PM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7167255",
+    "release_date": "September 05, 2024; 12:15:08 PM -0400",
+    "severity": null,
+    "summary": " This Security Bulletin addresses multiple vulnerabilities that have been remediated in IBM Aspera Faspex 5.0.10",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "Aspera Faspex 55.0.0 - 5.0.9"
+    ],
+    "recommendations": "For Aspera Faspex 5 on 5.0.0 - 5.0.9 platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/support/fixcentral/swg/downloadFixes?parent=ibm%7EOther%20software&product=ibm/Other+software/IBM+Aspera+Faspex+Server&release=All&platform=All&function=fixId&fixids=ibm-aspera-faspex-5.0.10.7849.x86_64&includeRequisites=1&includeSupersedes=0&downloadMethod=http"
+  },
+  {
+    "cve_id": "CVE-2024-37068,  https://exchange.xforce.ibmcloud.com/vulnerabilities/292799",
+    "published_date": "September 07, 2024; 10:15:02 AM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7167725",
+    "release_date": "September 07, 2024; 10:15:02 AM -0400",
+    "severity": null,
+    "summary": " There is a vulnerability in Manage Componenet  used by IBM Maximo Manage application in IBM Maximo Application Suite.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM Maximo Application Suite - Manage Component\nMAS 8.10 - Manage 8.6.16",
+      "IBM Maximo Application Suite - Manage Component\nMAS 8.11 - Manage 8.7.10",
+      "IBM Maximo Application Suite - Manage Component\nMAS 9.0.0 - Manage 9.0.1"
+    ],
+    "recommendations": "For IBM Maximo Application Suite - Manage Component on \n platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://www.ibm.com/docs/en/mas-cd/continuous-delivery?topic=upgrading"
+  },
+  {
+    "cve_id": "CVE-2024-45076,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351740, CVE-2024-45075,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351738, CVE-2024-45074,  https://exchange.xforce.ibmcloud.com/vulnerabilities/351729",
+    "published_date": "September 04, 2024; 12:15:08 PM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7167245",
+    "release_date": "September 04, 2024; 12:15:08 PM -0400",
+    "severity": null,
+    "summary": " An authenticated developer user can utilize webMethods Integration Server to create a user through the scheduler service and then elevate that user to an administrator using runAsUser. This action provides elevated privileges for the developer user. webMethods Integration Server could potentially allow an authenticated developer user to write an OSCommand.cnf file and then execute arbitrary commands on the server. webMethods Integration Server may also allow an authenticated developer to read /../.. files, even after checkFileRead is set.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM webMethods Integration10.15"
+    ],
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://documentation.softwareag.com/a_installer_and_update_manager/Using_SAG_Update_Manager_for_10-5_and_later/#page/sag-update-manager-help%2Fta-checking_for_fixes_on_empower.html%23"
+  },
+  {
+    "cve_id": "CVE-2024-40681,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297613, CVE-2024-40680,  https://exchange.xforce.ibmcloud.com/vulnerabilities/297611, CVE-2024-37371,  https://exchange.xforce.ibmcloud.com/vulnerabilities/296013, CVE-2024-37370,  https://exchange.xforce.ibmcloud.com/vulnerabilities/296012",
+    "published_date": "September 07, 2024; 11:15:10 AM -0400",
+    "description_source": "IBM",
+    "org_link": "https://www.ibm.com/support/pages/node/7167732",
+    "release_date": "September 07, 2024; 11:15:10 AM -0400",
+    "severity": null,
+    "summary": " Kerberos 5 and IBM MQ used by IBM MQ Operator and Queue Manager container images are vulnerable to denial of service due to improper memory allocation, and privilege escalation which may lead to bypassing security restrictions. This bulletin identifies the steps required to address these vulnerabilities.",
+    "affected_products": [
+      "Affected Product(s)Version(s)",
+      "IBM MQ Operator\nSC2 (formerly LTS): v3.2.0 - v3.2.3CD: \u00a0v3.0.0, v3.0.1, v3.1.0 - 3.1.3\nLTS: v2.0.0 - 2.0.25\nOther Release:\u00a0v2.4.0 - v2.4.8, v2.3.0 - 2.3.3, v2.2.0 - v2.2.2",
+      "IBM supplied MQ Advanced container images\nCD: 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.3.4.0-r1, 9.3.4.1-r1,9.3.5.0-r1,9.3.5.0-r2,9.3.5.1-r1, 9.3.5.1-r2LTS:\u00a09.2.0.1-r1-eus, 9.2.0.2-r1-eus, 9.2.0.2-r2-eus, 9.2.0.4-r1-eus, 9.2.0.5-r1-eus,\u00a09.2.0.5-r2-eus, 9.2.0.5-r3-eus, 9.2.0.6-r1-eus, 9.2.0.6-r2-eus, 9.2.0.6-r3-eus, 9.2.3.0-r1,\u00a09.2.4.0-r1, 9.2.5.0-r1, 9.2.5.0-r2, 9.2.5.0-r3, 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1,\u00a09.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2,\u00a09.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2\nOther Release:\u00a09.2.0.1-r1-eus, 9.2.0.2-r1-eus, 9.2.0.2-r2-eus, 9.2.0.4-r1-eus, 9.2.0.5-r1-eus, 9.2.0.5-r2-eus, 9.2.0.5-r3-eus, 9.2.0.6-r1-eus, 9.2.0.6-r2-eus, 9.2.0.6-r3-eus, 9.2.3.0-r1, 9.2.4.0-r1, 9.2.5.0-r1, 9.2.5.0-r2, 9.2.5.0-r3, 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4,\u00a0 9.3.0.3-r1,\u00a0 9.3.0.4-r1, 9.3.0.4-r2,\u00a0 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3,\u00a0 9.3.0.6-r1,\u00a0 9.3.1.0-r1, 9.3.1.0-r2, 9.3.1.0-r3, 9.3.1.1-r1, 9.3.2.0-r1, 9.3.2.0-r2, 9.3.2.1-r1, 9.3.2.1-r2,\u00a0 9.3.3.0-r1, 9.3.3.0-r2, 9.3.3.1-r1, 9.3.3.1-r2, 9.3.3.2-r1, 9.3.3.2-r2, 9.3.3.2-r3, ,9.3.3.3-r1, \u00a09.3.3.3-r2"
+    ],
+    "recommendations": "For Affected Product(s) on Version(s) platforms, it is recommended to apply the latest fix, which can be downloaded from the IBM Fix Central website: https://exchange.xforce.ibmcloud.com/vulnerabilities/296012"
+  },
+  {
+    "cve_id": "CVE-2024-21903",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-21897",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-21898",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-50366",
+    "published_date": "September 06, 2024; 1:15:12 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-51367",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-51368",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-21904",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-23",
+    "release_date": "May 21, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2024-21902: If exploited, the incorrect permission assignment for critical resources vulnerability could allow remote attackers who have gained user access to read or modify critical resources.\r\n\tCVE-2024-27127: If exploited, the double free vulnerability could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-27128, CVE-2024-27129, CVE-2024-27130: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-21904: If exploited, the path traversal vulnerability could allow remote users to read the contents of unexpected files and expose sensitive data.\r\n\u00a0\u00a0We have already fixed these vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.7.2770 build 20240520 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.7.2770 build 20240520 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td width=\"40%\">QTS 5.1.x</td>\r\n\t\t\t<td width=\"60%\">QTS 5.1.7.2770 build 20240520 and later</td>\r\n\t\t</tr>",
+      "<tr>\r\n\t\t\t<td width=\"40%\">QuTS hero h5.1.x</td>\r\n\t\t\t<td width=\"60%\">QuTS hero h5.1.7.2770 build 20240520 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-51366",
+    "published_date": "September 06, 2024; 1:15:13 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-20",
+    "release_date": "April 25, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2023-50361, CVE-2023-50362, CVE-2023-50364, CVE-2023-51367: If exploited, the buffer copy without checking size of input vulnerabilities could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2023-50363:\u00a0If exploited, the incorrect authorization vulnerability\u00a0could allow remote attackers who have gained user access to bypass 2-step verification.\r\n\tCVE-2023-50366: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained administrator access to inject malicious code.\r\n\tCVE-2023-51366: If exploited, the path traversal vulnerability could allow remote attackers who have gained user access to traverse the file system and read sensitive data.\r\n\tCVE-2023-51368:\u00a0If exploited, the NULL pointer dereference vulnerability could allow remote attackers who have gained user access to launch a denial-of-service (DoS) attack.\r\n\tCVE-2024-21897: If exploited, the cross-site scripting (XSS) vulnerability could allow attackers who have gained user access to inject malicious code.\r\n\tCVE-2024-21898, CVE-2024-21903:\u00a0If exploited, the OS command injection vulnerabilities could allow remote attackers who have gained user access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.6.2722 build 20240402 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.6.2734 build 20240414 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.6.2734 build 20240414 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-32763",
+    "published_date": "September 06, 2024; 1:15:15 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-33",
+    "release_date": "September 7, 2024",
+    "severity": "Important",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2024-32763: If exploited, the buffer copy without checking size of input vulnerability could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-38641:\u00a0If exploited, the OS command injection vulnerability could allow local attackers who have gained user access to inject malicious commands.\r\n\tCVE-2024-21906:\u00a0If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.8.2823 build 20240712 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.8.2823 build 20240712 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.8.2823 build 20240712 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-21906",
+    "published_date": "September 06, 2024; 1:15:14 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-33",
+    "release_date": "September 7, 2024",
+    "severity": "Important",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2024-32763: If exploited, the buffer copy without checking size of input vulnerability could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-38641:\u00a0If exploited, the OS command injection vulnerability could allow local attackers who have gained user access to inject malicious commands.\r\n\tCVE-2024-21906:\u00a0If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.8.2823 build 20240712 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.8.2823 build 20240712 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.8.2823 build 20240712 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-32771",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-28",
+    "release_date": "September 7, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\r\n\tCVE-2024-32771:\u00a0If exploited, the improper restriction of excessive authentication attempts vulnerability could allow attackers to use bruce force attacks to gain privileged access.\r\n\tCVE-2023-39298: If exploited, the missing authorization vulnerability could allow local attackers who have gained user access to access data or perform actions without the proper privileges.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.2.0.2782 build 20240601 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.2.0.2782 build 20240601 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.2.0.2782 build 20240601 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-38641",
+    "published_date": "September 06, 2024; 1:15:16 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-33",
+    "release_date": "September 7, 2024",
+    "severity": "Important",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\u00a0\u00a0\r\n\tCVE-2024-32763: If exploited, the buffer copy without checking size of input vulnerability could allow remote attackers who have gained user access to execute arbitrary code.\r\n\tCVE-2024-38641:\u00a0If exploited, the OS command injection vulnerability could allow local attackers who have gained user access to inject malicious commands.\r\n\tCVE-2024-21906:\u00a0If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.1.8.2823 build 20240712 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.1.8.2823 build 20240712 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.1.8.2823 build 20240712 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-34974",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-32",
+    "release_date": "September 7, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions.\u00a0\u00a0\r\n\tCVE-2023-34974: If exploited, the OS command injection vulnerability could allow remote attackers who have gained user access to inject malicious commands.\r\n\tCVE-2023-34979: If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 4.5.x\r\n\t\t\tQTS 4.5.4.2790 build 20240605 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h4.5.x\r\n\t\t\tQuTS hero h4.5.4.2790 build 20240606 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h4.5.x</td>\r\n\t\t\t<td>QuTS hero h4.5.4.2790 build 20240606 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-34979",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-32",
+    "release_date": "September 7, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions.\u00a0\u00a0\r\n\tCVE-2023-34974: If exploited, the OS command injection vulnerability could allow remote attackers who have gained user access to inject malicious commands.\r\n\tCVE-2023-34979: If exploited, the OS command injection vulnerability could allow remote attackers who have gained administrator access to inject malicious commands.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 4.5.x\r\n\t\t\tQTS 4.5.4.2790 build 20240605 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h4.5.x\r\n\t\t\tQuTS hero h4.5.4.2790 build 20240606 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h4.5.x</td>\r\n\t\t\t<td>QuTS hero h4.5.4.2790 build 20240606 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2023-39298",
+    "published_date": "September 06, 2024; 1:15:11 PM -0400",
+    "description": "QNAP Systems, Inc.",
+    "org_link": "https://www.qnap.com/en/security-advisory/qsa-24-28",
+    "release_date": "September 7, 2024",
+    "severity": "Moderate",
+    "summary": "Multiple\u00a0vulnerabilities have been reported to affect certain QNAP operating system versions:\r\n\tCVE-2024-32771:\u00a0If exploited, the improper restriction of excessive authentication attempts vulnerability could allow attackers to use bruce force attacks to gain privileged access.\r\n\tCVE-2023-39298: If exploited, the missing authorization vulnerability could allow local attackers who have gained user access to access data or perform actions without the proper privileges.\r\n\u00a0\u00a0We have already fixed the vulnerabilities in the following versions:\r\n\t\r\n\t\t\r\n\t\t\tAffected Product\r\n\t\t\tFixed Version\r\n\t\t\r\n\t\r\n\t\r\n\t\t\r\n\t\t\tQTS 5.1.x\r\n\t\t\tQTS 5.2.0.2782 build 20240601 and later\r\n\t\t\r\n\t\t\r\n\t\t\tQuTS hero h5.1.x\r\n\t\t\tQuTS hero h5.2.0.2782 build 20240601 and later",
+    "affected_products": [
+      "<tr>\r\n\t\t\t<td>QuTS hero h5.1.x</td>\r\n\t\t\t<td>QuTS hero h5.2.0.2782 build 20240601 and later</td>\r\n\t\t</tr>"
+    ],
+    "recommendations": "To secure your device, we recommend regularly updating your system to the latest version to benefit from vulnerability fixes. You can check the\u00a0product support status\u00a0to see the latest updates available to your NAS model."
+  },
+  {
+    "cve_id": "CVE-2024-7620",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/customizer-export-import/customizer-exportimport-097-authenticated-admin-arbitrary-file-upload-via-customization-settings-import",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Customizer Export/Import plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the '_import' function in all versions up to, and including, 0.9.7. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. NOTE: This vulnerability is only exploitable when used in conjunction with a race condition as the uploaded file is deleted shortly after it is created.",
+    "affected_products": [
+      {
+        "Affected Product": "customizer-export-import",
+        "Affected Version": "<= 0.9.7",
+        "Fixed Version": "0.9.7.1"
+      }
+    ],
+    "recommendations": "Update to version 0.9.7.1, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8428",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/forumwp/forumwp-forum-discussion-board-plugin-202-insecure-direct-object-reference-to-authenticated-subscriber-privilege-escalation-via-account-takeover",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The ForumWP \u2013 Forum & Discussion Board Plugin plugin for WordPress is vulnerable to Privilege Escalation via Insecure Direct Object Reference in all versions up to, and including, 2.0.2 via the submit_form_handler due to missing validation on the 'user_id' user controlled key. This makes it possible for authenticated attackers, with subscriber-level access and above, to change the email address of administrative user accounts which can then be leveraged to reset the administrative users password and gain access to their account.",
+    "affected_products": [
+      {
+        "Affected Product": "forumwp",
+        "Affected Version": "<= 2.0.2",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-8538",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/tuxedo-big-file-uploads/big-file-uploads-212-authenticated-author-full-path-disclosure",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Big File Uploads \u2013 Increase Maximum File Upload Size plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 2.1.2. This is due the plugin not sanitizing a file path in an error message. This makes it possible for authenticated attackers, with author-level access and above, to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.",
+    "affected_products": [
+      {
+        "Affected Product": "tuxedo-big-file-uploads",
+        "Affected Version": "<= 2.1.2",
+        "Fixed Version": "2.1.3"
+      }
+    ],
+    "recommendations": "Update to version 2.1.3, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7112",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/booking-system/pinpoint-booking-system-29950-authenticated-subscriber-sql-injection",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The Pinpoint Booking System \u2013 #1 WordPress Booking Plugin plugin for WordPress is vulnerable to SQL Injection via the \u2018schedule\u2019 parameter in all versions up to, and including, 2.9.9.5.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with Subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "affected_products": [
+      {
+        "Affected Product": "booking-system",
+        "Affected Version": "<= 2.9.9.5.0",
+        "Fixed Version": "2.9.9.5.1"
+      }
+    ],
+    "recommendations": "Update to version 2.9.9.5.1, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-1596",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ninja-forms-uploads/ninja-forms-file-uploads-3316-unauthenticated-stored-cross-site-scripting-via-file-upload",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The Ninja Forms - File Uploads plugin for WordPress is vulnerable to Stored Cross-Site Scripting via an uploaded file (e.g. RTX file) in all versions up to, and including, 3.3.16 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "ninja-forms-uploads",
+        "Affected Version": "<= 3.3.16",
+        "Fixed Version": "3.3.18"
+      }
+    ],
+    "recommendations": "Update to version 3.3.18, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7622",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/revision-manager-tmc/revision-manager-tmc-2819-missing-authorization-to-authenticated-subscriber-arbitrary-email-sending",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Revision Manager TMC plugin for WordPress is vulnerable to unauthorized arbitrary email sending due to a missing capability check on the _a_ajaxQuickEmailTestCallback() function in all versions up to, and including, 2.8.19. This makes it possible for authenticated attackers, with subscriber-level access and above, to send emails with arbitrary content to any individual through the vulnerable web server.",
+    "affected_products": [
+      {
+        "Affected Product": "revision-manager-tmc",
+        "Affected Version": "<= 2.8.19",
+        "Fixed Version": "2.8.20"
+      }
+    ],
+    "recommendations": "Update to version 2.8.20, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-6010",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cost-calculator-builder-pro/cost-calculator-builder-pro-3196-unauthenticated-price-manipulation",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Cost Calculator Builder PRO plugin for WordPress is vulnerable to price manipulation in all versions up to, and including, 3.1.96. This is due to the plugin allowing the price field to be manipulated prior to processing via the 'create_cc_order' function, called from the Cost Calculator Builder plugin. This makes it possible for unauthenticated attackers to manipulate the price of orders submitted via the calculator. Note: this vulnerability was partially patched with the release of Cost Calculator Builder version 3.2.17.",
+    "affected_products": [
+      {
+        "Affected Product": "cost-calculator-builder-pro",
+        "Affected Version": "<= 3.1.96",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-6849",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/preloader-plus/preloader-plus-wordpress-loading-screen-plugin-221-authenticated-author-stored-cross-site-scripting-via-svg-file-upload",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Preloader Plus \u2013 WordPress Loading Screen Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via SVG File uploads in all versions up to, and including, 2.2.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the SVG file.",
+    "affected_products": [
+      {
+        "Affected Product": "preloader-plus",
+        "Affected Version": "<= 2.2.1",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-7611",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/enteraddons/enter-addons-ultimate-template-builder-for-elementor-218-authenticated-contributor-stored-cross-site-scripting-via-events-card-widget",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Enter Addons \u2013 Ultimate Template Builder for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'tag' attribute of the Events Card widget in all versions up to, and including, 2.1.8 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "enteraddons",
+        "Affected Version": "<= 2.1.8",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-8317",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpadcenter/wp-adcenter-ad-manager-adsense-ads-256-authenticated-contributor-stored-cross-site-scripting-via-ad-alignment-attribute",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The WP AdCenter \u2013 Ad Manager & Adsense Ads plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018ad_alignment\u2019 attribute in all versions up to, and including, 2.5.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "wpadcenter",
+        "Affected Version": "<= 2.5.6",
+        "Fixed Version": "2.5.7"
+      }
+    ],
+    "recommendations": "Update to version 2.5.7, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7599",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/advanced-sermons/advanced-sermons-33-authenticated-contributor-stored-cross-site-scripting",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Advanced Sermons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018sermon_video_embed\u2019 parameter in all versions up to, and including, 3.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "advanced-sermons",
+        "Affected Version": "<= 3.3",
+        "Fixed Version": "3.4"
+      }
+    ],
+    "recommendations": "Update to version 3.4, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7349",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/lifterlms/lifterlms-775-authenticated-admin-sql-injection",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The LifterLMS \u2013 WP LMS for eLearning, Online Courses, & Quizzes plugin for WordPress is vulnerable to blind SQL Injection via the 'order' parameter in all versions up to, and including, 7.7.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query.  This makes it possible for authenticated attackers, with administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+    "affected_products": [
+      {
+        "Affected Product": "lifterlms",
+        "Affected Version": "<= 7.7.5",
+        "Fixed Version": "7.7.6"
+      }
+    ],
+    "recommendations": "Update to version 7.7.6, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7493",
+    "published_date": "September 06, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpcom-member/wpcom-member-1521-unauthenticated-privilege-escalation-via-user-meta",
+    "release_date": "September 06, 2024; 12:00:00 AM -0400",
+    "severity": "Critical",
+    "summary": "The WPCOM Member plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.5.2.1. This is due to the plugin allowing arbitrary data to be passed to wp_insert_user() during registration. This makes it possible for unauthenticated attackers to update their role to that of an administrator during registration.",
+    "affected_products": [
+      {
+        "Affected Product": "wpcom-member",
+        "Affected Version": "<= 1.5.2.1",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-8292",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-recall/wp-recall-registration-profile-commerce-more-16268-insecure-direct-object-reference-to-unauthenticated-arbitrary-password-update",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "Critical",
+    "summary": "The WP-Recall \u2013 Registration, Profile, Commerce & More plugin for WordPress is vulnerable to privilege escalation/account takeover in all versions up to, and including, 16.26.8. This is due to to plugin not properly verifying a user's identity during new order creation. This makes it possible for unauthenticated attackers to supply any email through the user_email field and update the password for that user during new order creation. This requires the commerce addon to be enabled in order to exploit.",
+    "affected_products": [
+      {
+        "Affected Product": "wp-recall",
+        "Affected Version": "<= 16.26.8",
+        "Fixed Version": "16.26.9"
+      }
+    ],
+    "recommendations": "Update to version 16.26.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8427",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/frontend-post-submission-manager-lite/frontend-post-submission-manager-lite-frontend-posting-wordpress-plugin-122-missing-authorization-to-authenticated-subscriber-settings-update",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Frontend Post Submission Manager Lite \u2013 Frontend Posting WordPress Plugin plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the save_global_settings and process_form_edit functions in all versions up to, and including, 1.2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update the plugin's settings and forms.",
+    "affected_products": [
+      {
+        "Affected Product": "frontend-post-submission-manager-lite",
+        "Affected Version": "<= 1.2.2",
+        "Fixed Version": "1.2.3"
+      }
+    ],
+    "recommendations": "Update to version 1.2.3, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8247",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/newsletters-lite/newsletters-4992-authenticated-privilege-escalation",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The Newsletters plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 4.9.9.2. This is due to the plugin not restricting what user meta can be updated as screen options. This makes it possible for authenticated attackers, with subscriber-level access and above, to escalate their privileges to that of an administrator. Please note that this only affects users with access to edit/update screen options, which means an administrator would need to grant lower privilege users with access to the Sent & Draft Emails page of the plugin in order for this to be exploited.",
+    "affected_products": [
+      {
+        "Affected Product": "newsletters-lite",
+        "Affected Version": "<= 4.9.9.2",
+        "Fixed Version": "4.9.9.3"
+      }
+    ],
+    "recommendations": "Update to version 4.9.9.3, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2022-3556",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cab-fare-calculator/cab-fare-calculator-116-authenticated-admin-stored-cross-site-scripting",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Cab fare calculator plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the vehicle title setting in versions up to, and including, 1.1.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers with administrative privileges to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.",
+    "affected_products": [
+      {
+        "Affected Product": "cab-fare-calculator",
+        "Affected Version": "<= 1.1.6",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2022-4529",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/security-antivirus-firewall/security-antivirus-firewall-saf-235-ip-address-spoofing-to-protection-mechanism-bypass",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Security, Antivirus, Firewall \u2013 S.A.F plugin for WordPress is vulnerable to IP Address Spoofing in versions up to, and including, 2.3.5. This is due to insufficient restrictions on where the IP Address information is being retrieved for request logging and login restrictions. Attackers can supply the X-Forwarded-For header with with a different IP Address that will be logged and can be used to bypass settings that may have blocked out an IP address from logging in.",
+    "affected_products": [
+      {
+        "Affected Product": "security-antivirus-firewall",
+        "Affected Version": "<= 2.3.5",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-8480",
+    "published_date": "August 21, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/sirv/image-optimizer-resizer-and-cdn-sirv-727-missing-authorization-to-authenticated-contributor-arbitrary-file-upload",
+    "release_date": "August 21, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The Image Optimizer, Resizer and CDN \u2013 Sirv plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'sirv_save_prevented_sizes' function in all versions up to, and including, 7.2.7. This makes it possible for authenticated attackers, with Contributor-level access and above, to exploit the 'sirv_upload_file_by_chunks_callback' function, which lacks proper file type validation, allowing attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+    "affected_products": [
+      {
+        "Affected Product": "sirv",
+        "Affected Version": "<= 7.2.7",
+        "Fixed Version": "7.2.8"
+      }
+    ],
+    "recommendations": "Update to version 7.2.8, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-6929",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dynamic-featured-image/dynamic-featured-image-370-authenticated-contributor-stored-cross-site-scripting-via-dfifeatured-parameter",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Dynamic Featured Image plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018dfiFeatured\u2019 parameter in all versions up to, and including, 3.7.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "dynamic-featured-image",
+        "Affected Version": "<= 3.7.0",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-6332",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/detail/booking-for-appointments-and-events-calendar-amelia-premium-77-and-lite-123-missing-authorization-to-sensitive-information-exposure",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Booking for Appointments and Events Calendar \u2013 Amelia Premium and Lite plugins for WordPress are vulnerable to unauthorized access of data due to a missing capability check on the 'ameliaButtonCommand' function in all versions up to, and including, Premium 7.7 and Lite 1.2.3. This makes it possible for unauthenticated attackers to access employee calendar details, including Google Calendar OAuth tokens in the premium version.",
+    "affected_products": [
+      {
+        "Affected Product": "ameliabooking",
+        "Affected Version": "<= 1.2.3, <= 7.7",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-7381",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cf-geoplugin/geo-controller-869-missing-authorization-to-unauthenticated-shortcode-execution",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Geo Controller plugin for WordPress is vulnerable to unauthorized shortcode execution due to missing authorization and capability checks on the ajax__shortcode_cache function in all versions up to, and including, 8.6.9. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes available on the target site.",
+    "affected_products": [
+      {
+        "Affected Product": "cf-geoplugin",
+        "Affected Version": "<= 8.6.9",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-7415",
+    "published_date": "September 05, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/remember-me-controls/remember-me-controls-201-unauthenticated-full-path-disclosure",
+    "release_date": "September 05, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Remember Me Controls plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 2.0.1. This is due to the plugin allowing direct access to the bootstrap.php file which has display_errors on. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.",
+    "affected_products": [
+      {
+        "Affected Product": "remember-me-controls",
+        "Affected Version": "<= 2.0.1",
+        "Fixed Version": "2.1"
+      }
+    ],
+    "recommendations": "Update to version 2.1, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8363",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/share-this-image/share-this-image-202-authenticated-contributor-stored-cross-site-scripting-via-sti-buttons-shortcode",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Share This Image plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's STI Buttons shortcode in all versions up to, and including, 2.02 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "share-this-image",
+        "Affected Version": "<= 2.02",
+        "Fixed Version": "2.03"
+      }
+    ],
+    "recommendations": "Update to version 2.03, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-6894",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/integracao-rd-station/rd-station-532-authenticated-contributor-stored-cross-site-scripting",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The RD Station plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 5.3.2 due to insufficient input sanitization and output escaping of post metaboxes added by the plugin. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "integracao-rd-station",
+        "Affected Version": "<= 5.3.2",
+        "Fixed Version": "5.4.0"
+      }
+    ],
+    "recommendations": "Update to version 5.4.0, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7380",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cf-geoplugin/geo-controller-869-missing-authorization-to-authenticated-subscriber-menu-creationdeletion",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Geo Controller plugin for WordPress is vulnerable to unauthorized menu creation/deletion due to missing capability checks on the ajax__geolocate_menu and ajax__geolocate_remove_menu functions in all versions up to, and including, 8.6.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create or delete WordPress menus.",
+    "affected_products": [
+      {
+        "Affected Product": "cf-geoplugin",
+        "Affected Version": "<= 8.6.9",
+        "Fixed Version": ""
+      }
+    ],
+    "recommendations": "No known patch available. Please review the vulnerability's details in depth and employ mitigations based on your organization's risk tolerance. It may be best to uninstall the affected software and find a replacement."
+  },
+  {
+    "cve_id": "CVE-2024-6835",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/add-search-to-menu/ivory-search-wordpress-search-plugin-556-information-exposure-via-ajax-search-form",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Ivory Search \u2013 WordPress Search Plugin plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 5.5.6 via the ajax_load_posts function. This makes it possible for unauthenticated attackers to extract text data from password-protected posts using the boolean-based attack on the AJAX search form",
+    "affected_products": [
+      {
+        "Affected Product": "add-search-to-menu",
+        "Affected Version": "<= 5.5.6",
+        "Fixed Version": "5.5.7"
+      }
+    ],
+    "recommendations": "Update to version 5.5.7, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8121",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-missing-authorization-to-admin-username-change",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to unauthorized modification of user names due to a missing capability check on the wpext_change_admin_name() function in all versions up to, and including, 3.0.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to change an admin's username to a username of their liking as long as the default 'admin' was used.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8123",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-insecure-direct-object-reference",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.0.8 via the duplicate_post function due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Contributor-level access and above, to duplicate posts written by other authors including admins. This includes the ability to duplicate password-protected posts, which reveals their contents.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8106",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-authenticated-subscriber-sensitive-information-exposure",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.0.8 via the download_user_ajax function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to extract sensitive data including usernames, hashed passwords, and emails.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8102",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-authenticated-subscriber-arbitrary-options-update",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to unauthorized modification of data that can lead to privilege escalation due to a missing capability check on the module_all_toggle_ajax() function in all versions up to, and including, 3.0.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update arbitrary options on the WordPress site. This can be leveraged to update the default role for registration to administrator and enable user registration for attackers to gain administrative user access to a vulnerable site.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-5309",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/form-vibes/form-vibes-database-manager-for-forms-1412-missing-authorization-in-multiple-functions",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Form Vibes \u2013 Database Manager for Forms plugin for WordPress is vulnerable to unauthorized access of data and modification of data due to a missing capability check on the fv_export_csv, reset_settings, save_settings, save_columns_settings, get_analytics_data, get_event_logs_data, delete_submissions, and get_submissions functions in all versions up to, and including, 1.4.12. This makes it possible for authenticated attackers, with Subscriber-level access and above, to perform multiple unauthorized actions. NOTE: This vulnerability is partially fixed in version 1.4.12.",
+    "affected_products": [
+      {
+        "Affected Product": "form-vibes",
+        "Affected Version": "<= 1.4.12",
+        "Fixed Version": "1.4.13"
+      }
+    ],
+    "recommendations": "Update to version 1.4.13, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8318",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/attributes-for-blocks/attributes-for-blocks-106-authenticated-contributor-stored-cross-site-scripting-via-attributesforblocks-parameter",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Attributes for Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018attributesForBlocks\u2019 parameter in all versions up to, and including, 1.0.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "attributes-for-blocks",
+        "Affected Version": "<= 1.0.6",
+        "Fixed Version": "1.0.7"
+      }
+    ],
+    "recommendations": "Update to version 1.0.7, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7605",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/helloasso/helloasso-1110-missing-authorization-to-authenticated-contributor-limited-options-update",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The HelloAsso plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'ha_ajax' function in all versions up to, and including, 1.1.10. This makes it possible for authenticated attackers, with Contributor-level access and above, to update plugin options, potentially disrupting the service.",
+    "affected_products": [
+      {
+        "Affected Product": "helloasso",
+        "Affected Version": "<= 1.1.10",
+        "Fixed Version": "1.1.11"
+      }
+    ],
+    "recommendations": "Update to version 1.1.11, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8104",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-directory-traversal-to-authenticated-subscriber-arbitrary-file-download",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 3.0.8 via the download_file_ajax function. This makes it possible for authenticated attackers, with subscriber access and above, to read the contents of arbitrary files on the server, which can contain sensitive information.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7627",
+    "published_date": "September 04, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/file-manager/bit-file-manager-60-655-unauthenticated-remote-code-execution-via-race-condition",
+    "release_date": "September 04, 2024; 12:00:00 AM -0400",
+    "severity": "High",
+    "summary": "The Bit File Manager plugin for WordPress is vulnerable to Remote Code Execution in versions 6.0 to 6.5.5 via the 'checkSyntax' function. This is due to writing a temporary file to a publicly accessible directory before performing file validation. This makes it possible for unauthenticated attackers to execute code on the server if an administrator has allowed Guest User read permissions.",
+    "affected_products": [
+      {
+        "Affected Product": "file-manager",
+        "Affected Version": "6.0 - 6.5.5",
+        "Fixed Version": "6.5.6"
+      }
+    ],
+    "recommendations": "Update to version 6.5.6, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8119",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-reflected-cross-site-scripting-via-page",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the page parameter in all versions up to, and including, 3.0.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8289",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dc-woocommerce-multi-vendor/multivendorx-the-ultimate-woocommerce-multivendor-marketplace-solution-420-missing-authorization-to-limited-vendor-privilege-escalationaccount-takeover",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Critical",
+    "summary": "The MultiVendorX \u2013 The Ultimate WooCommerce Multivendor Marketplace Solution plugin for WordPress is vulnerable to privilege escalation/de-escalation and account takeover due to an insufficient capability check on the update_item_permissions_check and create_item_permissions_check functions in all versions up to, and including, 4.2.0. This makes it possible for unauthenticated attackers to change the password of any user with the vendor role, create new users with the vendor role, and demote other users like administrators to the vendor role.",
+    "affected_products": [
+      {
+        "Affected Product": "dc-woocommerce-multi-vendor",
+        "Affected Version": "<= 4.2.0",
+        "Fixed Version": "4.2.1"
+      }
+    ],
+    "recommendations": "Update to version 4.2.1, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8117",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpextended/the-ultimate-wordpress-toolkit-wp-extended-308-reflected-cross-site-scripting-via-selected-option",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The The Ultimate WordPress Toolkit \u2013 WP Extended plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the \u2018selected_option\u2019 parameter in all versions up to, and including, 3.0.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
+    "affected_products": [
+      {
+        "Affected Product": "wpextended",
+        "Affected Version": "<= 3.0.8",
+        "Fixed Version": "3.0.9"
+      }
+    ],
+    "recommendations": "Update to version 3.0.9, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-8325",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/blockspare/gutenberg-page-builder-blocks-ready-made-patterns-library-324-authenticated-contributor-stored-cross-site-scripting",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The Blockspare: Gutenberg Blocks & Patterns for Blogs, Magazines, Business Sites \u2013 Post Grids, Sliders, Carousels, Counters, Page Builder & Starter Site Imports, No Coding Needed plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several parameters in the \u2018blockspare_render_social_sharing_block\u2019 function in all versions up to, and including, 3.2.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+    "affected_products": [
+      {
+        "Affected Product": "blockspare",
+        "Affected Version": "<= 3.2.4",
+        "Fixed Version": "3.2.5"
+      }
+    ],
+    "recommendations": "Update to version 3.2.5, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7950",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-job-portal/wp-job-portal-216-missing-authorization-to-unauthenticated-local-file-inclusion-arbitrary-settings-update-and-user-creation",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Critical",
+    "summary": "The WP Job Portal \u2013 A Complete Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to Local File Inclusion, Arbitrary Settings Update, and User Creation in all versions up to, and including, 2.1.6 via several functions called by the 'checkFormRequest' function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other \u201csafe\u201d file types can be uploaded and included. Attackers can also update arbitrary settings and create user accounts even when registration is disabled, leading to user creation with a default role of Administrator.",
+    "affected_products": [
+      {
+        "Affected Product": "wp-job-portal",
+        "Affected Version": "<= 2.1.6",
+        "Fixed Version": "2.1.7"
+      }
+    ],
+    "recommendations": "Update to version 2.1.7, or a newer patched version"
+  },
+  {
+    "cve_id": "CVE-2024-7870",
+    "published_date": "September 03, 2024; 12:00:00 AM -0400",
+    "description_source": "WordFence",
+    "org_link": "https://www.wordfence.com/threat-intel/vulnerabilities/detail/pixelyoursite-your-smart-pixel-tag-api-manager-971-and-pixelyoursite-pro-1042-unauthenticated-information-exposure-and-log-deletion",
+    "release_date": "September 03, 2024; 12:00:00 AM -0400",
+    "severity": "Medium",
+    "summary": "The PixelYourSite \u2013 Your smart PIXEL (TAG) & API Manager and the PixelYourSite PRO plugins for WordPress are vulnerable to Sensitive Information Exposure in all versions up to, and including, 9.7.1 and 10.4.2, respectively, through publicly exposed log files. This makes it possible for unauthenticated attackers to view potentially sensitive information contained in the exposed log files, and to delete log files.",
+    "affected_products": [
+      {
+        "Affected Product": "pixelyoursite",
+        "Affected Version": "<= 9.7.1, <= 10.4.2",
+        "Fixed Version": "9.7.2, 10.4.3"
+      }
+    ],
+    "recommendations": "Update to version 9.7.2, or a newer patched version"
+  }
+]
