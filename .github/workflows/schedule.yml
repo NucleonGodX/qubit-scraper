@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Scraper on Vercel
-        run: curl -X POST https://your-vercel-app.vercel.app/run_scraper
+        run: curl -X POST https://qubit-scraper-1p8gjut6x-nucleongodxs-projects.vercel.app//run_scraper
