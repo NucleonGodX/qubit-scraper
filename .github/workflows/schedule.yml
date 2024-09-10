@@ -1,8 +1,11 @@
 name: Schedule Scraper
 
 on:
-  schedule:
-    - cron: '0 */1 * * *'  # Run every 6 hours
+  push:   # Trigger on push events
+    branches:
+      - main
+  schedule:  # Schedule trigger every 6 hours
+    - cron: "0 */6 * * *"
 
 jobs:
   run-scraper:
