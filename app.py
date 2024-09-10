@@ -5,21 +5,22 @@ from scrapy.crawler import CrawlerProcess
 from nvd_scraper.spiders.nvd_spider import NVDSpider
 from pymongo import MongoClient, errors
 from flask import Flask, jsonify
+from multiprocessing import Process
 
 app = Flask(__name__)
 
-url = '***REMOVED***/?retryWrites=true&w=majority&appName=qubit-arvrs'
-db_name = 'arvrs'
-collection_name = 'vulnerability'
+url = os.getenv('MONGODB_URL', '***REMOVED***/?')
+db_name = os.getenv('DB_NAME', 'arvrs')
+collection_name = os.getenv('COLLECTION_NAME', 'vulnerability')
 
 def run_first_level_scraping():
-    """Run the first level of scraping to generate the JSON file with links"""
+    """Run the first level of scraping to generate the JSON file with links."""
     process = CrawlerProcess()
     process.crawl(NVDSpider)
     process.start()
 
 def run_second_level_scraping():
-    """Run the second level of scraping by calling another Python script"""
+    """Run the second level of scraping by calling another Python script."""
     subprocess.run(['python', 'new.py'])
 
 def load_json_file(file_path):
@@ -84,7 +85,7 @@ def insert_many_vulnerabilities(vulnerabilities):
         client.close()
 
 def run_full_scraper():
-    """Run the full scraping process and insert data into MongoDB"""
+    """Run the full scraping process and insert data into MongoDB."""
     os.makedirs('data', exist_ok=True)
     run_first_level_scraping()
     run_second_level_scraping()
@@ -98,11 +99,18 @@ def run_full_scraper():
     insert_many_vulnerabilities(combined_data)
     return len(combined_data)
 
+def run_scraper_in_background():
+    """Run the scraper in a background process."""
+    scraper_process = Process(target=run_full_scraper)
+    scraper_process.start()
+    scraper_process.join()
+
 @app.route('/run_scraper', methods=['POST'])
 def trigger_scraper():
     try:
-        items_scraped = run_full_scraper()
-        return jsonify({"message": "Scraping process completed and data inserted into MongoDB", "items_scraped": items_scraped})
+        # Start scraper in a background process
+        run_scraper_in_background()
+        return jsonify({"message": "Scraping process triggered in background."})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
