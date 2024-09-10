@@ -24,7 +24,6 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
         
         request_count = 0
         for item in data:
-            # Check if the URL is a WordFence URL
             if 'wordfence.com' in item.get('org_link', '').lower():
                 yield scrapy.Request(url=item['org_link'], callback=self.parse, meta={'item': item}, errback=self.errback_httpbin)
                 request_count += 1
@@ -44,13 +43,12 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
         # Extracting affected and patched versions
         affected_versions = response.css('tr:contains("Affected Version") td.versions-list li::text').getall()
         patched_versions = response.css('tr:contains("Patched Version") td.versions-list li::text').getall()
+        software_slug = response.css('tr:contains("Software Slug") td::text').get().strip()
 
         affected_products = [
-            {
-                "Affected Product": response.css('tr:contains("Software Slug") td::text').get().strip(),
-                "Affected Version": ', '.join(affected_versions),
-                "Fixed Version": ', '.join(patched_versions)
-            }
+            f"Affected Product: {software_slug}",
+            f"Affected Version: {', '.join(affected_versions)}",
+            f"Fixed Version: {', '.join(patched_versions)}"
         ]
 
         recommendations = response.css('tr:contains("Remediation") td::text').get()
@@ -58,7 +56,7 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
         scraped_item = {
             'cve_id': item.get('cve_id'),
             'published_date': self.format_date(published_date) if published_date else item.get('published_date'),
-            'description_source': "WordFence",
+            'description': "WordFence",
             'org_link': response.url,
             'release_date': self.format_date(published_date) if published_date else item.get('published_date'),
             'severity': severity or item.get('severity'),
