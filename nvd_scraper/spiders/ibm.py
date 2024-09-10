@@ -60,7 +60,7 @@ class IBMVulnerabilitySpider(scrapy.Spider):
         scraped_item = {
             'cve_id':  item.get('cve_id'),
             'published_date': self.format_date(published_date) if published_date else item.get('published_date'),
-            'description_source': "IBM",
+            'description': "IBM",
             'org_link': response.url,
             'release_date': self.format_date(published_date) if published_date else item.get('published_date'),
             'severity': severity or item.get('severity'),
@@ -105,7 +105,9 @@ class IBMVulnerabilitySpider(scrapy.Spider):
                 return "Medium"
             else:
                 return "Low"
-        return None
+        
+        # If no severity is found, default to "Medium"
+        return "Medium"
 
     def format_date(self, date_string):
         try:

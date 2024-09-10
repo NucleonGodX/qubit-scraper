@@ -44,8 +44,14 @@ class QNAPAdvisorySpider(scrapy.Spider):
             summary = self.extract_section(html_response, 'Summary')
             description = item['description_source']  # Use the description from the input data
             recommendations = self.extract_section(html_response, 'Recommendation')
-            
-            affected_products = html_response.css('table.table-bordered tr:not(:first-child)').getall()
+
+            # Extract affected products and fixed versions
+            product_rows = html_response.css('table.table-bordered tbody tr')
+            affected_products_and_versions = []
+            for row in product_rows:
+                affected_product = row.css('td:nth-child(1)::text').get().strip()
+                fixed_version = row.css('td:nth-child(2)::text').get().strip()
+                affected_products_and_versions.append(f'Affected Product="{affected_product}" Fixed version="{fixed_version}"')
 
             scraped_item = {
                 'cve_id': item['cve_id'],
@@ -55,7 +61,7 @@ class QNAPAdvisorySpider(scrapy.Spider):
                 'release_date': release_date,
                 'severity': severity,
                 'summary': summary,
-                'affected_products': affected_products,
+                'affected_products': affected_products_and_versions,  # Now this is an array
                 'recommendations': recommendations
             }
             
