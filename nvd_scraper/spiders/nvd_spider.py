@@ -18,7 +18,7 @@ class NVDSpider(scrapy.Spider):
         self.results = []
         self.page_count = 0
         self.max_pages = 1
-        self.target_orgs = ['ibm', 'qnap', 'word', 'adobe', 'symphony']
+        self.target_orgs = ['ibm', 'qnap', 'word', 'adobe', 'microsoft', 'windows']  # Convert these to lowercase
 
     def start_requests(self):
         yield self.get_page_request(0)
@@ -97,7 +97,7 @@ class NVDSpider(scrapy.Spider):
                          'qnap' in link.lower() or 
                          'ibm.com' in link.lower() or 
                          'wordfence' in link.lower() or 
-                         'adobe' in link.lower()), None)
+                         'microsoft.com' in link.lower()), None)
         
         if org_link:
             self.logger.info(f"Found relevant link for {cve_id}: {org_link}")

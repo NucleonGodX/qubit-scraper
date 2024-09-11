@@ -93,8 +93,8 @@ def run_full_scraper():
     ibm_file = 'data/ibm_vulnerabilities_output.json'
     qnap_file = 'data/qnap_advisories_output.json'
     wordfence_file = 'data/wordfence_vulnerabilities_output.json'
-    
-    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file)
+    microsoft_file='data/microsoft_vulnerabilities_output.json'
+    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file, microsoft_file)
     
     insert_many_vulnerabilities(combined_data)
     return len(combined_data)
@@ -121,7 +121,7 @@ def get_vulnerabilities():
     collection = db[collection_name]
     
     try:
-        vulnerabilities = list(collection.find({}, {'_id': 0}).limit(100)) 
+        vulnerabilities = list(collection.find({}, {'_id': 0}).limit(1000)) 
         return jsonify(vulnerabilities)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
