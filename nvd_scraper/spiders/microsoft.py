@@ -1,6 +1,11 @@
 import scrapy
+from scrapy.http import HtmlResponse
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import json
-from w3lib.html import remove_tags
 from datetime import datetime
 
 class MicrosoftVulnerabilitySpider(scrapy.Spider):
@@ -9,6 +14,14 @@ class MicrosoftVulnerabilitySpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         super(MicrosoftVulnerabilitySpider, self).__init__(*args, **kwargs)
         self.items = []
+        
+        # Set up Selenium
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--window-size=1920,1080")
+        self.driver = webdriver.Chrome(options=chrome_options)
     
     def start_requests(self):
         try:
@@ -25,23 +38,51 @@ class MicrosoftVulnerabilitySpider(scrapy.Spider):
         request_count = 0
         for item in data:
             if 'microsoft.com' in item.get('org_link', '').lower():
-                yield scrapy.Request(url=item['org_link'], callback=self.parse, meta={'item': item}, errback=self.errback_httpbin)
+                yield scrapy.Request(url=item['org_link'], callback=self.parse, meta={'item': item}, dont_filter=True)
                 request_count += 1
         
         self.logger.info(f"Generated {request_count} requests")
 
     def parse(self, response):
-        self.logger.info(f"Parsing response from {response.url}")
         item = response.meta['item']
-
-        summary = response.css('h1.ms-fontWeight-semibold::text').get()
-        severity = response.css('div.ms-Stack p:contains("Max Severity:")::text').re_first(r'Max Severity: (.+)')
+        self.driver.get(response.url)
         
-        affected_products = response.css('div[data-automation-key="product"]::text').getall()
+        # Wait for multiple elements to be present
+        try:
+            WebDriverWait(self.driver, 60).until(
+                EC.all_of(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "h1.ms-fontWeight-semibold")),
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "div.ms-Stack")),
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "div[data-automation-key='product']"))
+                )
+            )
+        except Exception as e:
+            self.logger.error(f"Timeout waiting for page to load: {response.url}. Error: {str(e)}")
+            return
+        
+        # Additional wait to ensure dynamic content is loaded
+        self.driver.implicitly_wait(10)
+        
+        # Get the page source after JavaScript has rendered the content
+        page_source = self.driver.page_source
+        sel_response = HtmlResponse(url=response.url, body=page_source, encoding='utf-8')
+        
+        # Extract summary
+        summary = self.safe_extract(sel_response, 'h1.ms-fontWeight-semibold::text')
+        self.logger.info(f"Extracted summary: {summary}")
+        
+        # Extract severity
+        severity = self.safe_extract(sel_response, 'div.ms-Stack p:contains("Max Severity:")::text', method='re_first', pattern=r'Max Severity:\s*(\w+)')
+        self.logger.info(f"Extracted severity: {severity}")
+        
+        # Extract affected products
+        affected_products = sel_response.css('div[data-automation-key="product"]::text').getall()
         affected_products = [f"Affected Product: {product.strip()}" for product in affected_products if product.strip()]
-
-        recommendations = response.css('div.root-144::text').get()
-
+        self.logger.info(f"Extracted affected products: {affected_products}")
+        
+        # Extract recommendations
+        recommendations = self.safe_extract(sel_response, 'div.root-144::text')
+        
         scraped_item = {
             'cve_id': item.get('cve_id'),
             'published_date': item.get('published_date'),
@@ -58,10 +99,23 @@ class MicrosoftVulnerabilitySpider(scrapy.Spider):
         self.logger.info(f"Scraped item for CVE-ID: {scraped_item['cve_id']}")
         yield scraped_item
 
-    def errback_httpbin(self, failure):
-        self.logger.error(f"Request failed: {failure}")
+    def safe_extract(self, response, selector, method='get', pattern=None):
+        try:
+            if method == 'get':
+                result = response.css(selector).get()
+            elif method == 're_first':
+                result = response.css(selector).re_first(pattern)
+            else:
+                self.logger.error(f"Unknown extraction method: {method}")
+                return None
+            
+            return result.strip() if result else None
+        except Exception as e:
+            self.logger.error(f"Error extracting with selector '{selector}': {str(e)}")
+            return None
 
     def closed(self, reason):
+        self.driver.quit()
         with open('data/microsoft_vulnerabilities_output.json', 'w') as f:
             json.dump(self.items, f, indent=2)
         self.logger.info(f"Spider closed. Wrote {len(self.items)} items to microsoft_vulnerabilities_output.json")
