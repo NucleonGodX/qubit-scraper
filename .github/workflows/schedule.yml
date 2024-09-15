@@ -1,15 +1,16 @@
 name: Schedule Scraper
 
 on:
-  push:   # Trigger on push events
+  push:   
     branches:
       - main
-  schedule:  # Schedule trigger every 6 hours
-    - cron: "0 */6 * * *"
+  schedule: 
+    - cron: "0 */3 * * *"
 
 jobs:
   run-scraper:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Scraper on Vercel
-        run: curl -X POST https://qubit-scraper-1p8gjut6x-nucleongodxs-projects.vercel.app/run_scraper
+      - name: Trigger Scraper 
+        run: |
+          curl -X GET https://qubit-scraper-amazing-systummm-ewjqy.onrender.com/run_scraper --silent --output /dev/null --max-time 5
