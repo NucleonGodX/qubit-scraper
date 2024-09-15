@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Trigger Scraper 
         run: |
-          curl -X GET https://qubit-scraper-amazing-systummm-ewjqy.onrender.com/run_scraper --silent --max-time 5
+          curl -X POST https://qubit-scraper-amazing-systummm-ewjqy.onrender.com/run_scraper --silent --max-time 5
