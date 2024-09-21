@@ -94,7 +94,8 @@ def run_full_scraper():
     qnap_file = 'data/qnap_advisories_output.json'
     wordfence_file = 'data/wordfence_vulnerabilities_output.json'
     microsoft_file='data/microsoft_vulnerabilities_output.json'
-    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file, microsoft_file)
+    cisco_file='data/cisco_advisories_output.json'
+    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file, microsoft_file, cisco_file)
     
     insert_many_vulnerabilities(combined_data)
     return len(combined_data)
