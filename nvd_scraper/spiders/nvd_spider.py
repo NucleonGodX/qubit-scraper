@@ -18,12 +18,13 @@ class NVDSpider(scrapy.Spider):
         self.results = []
         self.page_count = 0
         self.max_pages = 1
-        self.target_orgs = ['ibm', 'qnap', 'word', 'adobe', 'microsoft', 'windows']  # Convert these to lowercase
+        self.target_orgs = ['ibm', 'qnap', 'word', 'adobe', 'microsoft', 'windows', "mac", "apple", "cisco"]  # Convert these to lowercase
 
     def start_requests(self):
         yield self.get_page_request(0)
 
     def get_page_request(self, start_index):
+        
         params = {
             'isCpeNameSearch': 'false',
             'results_type': 'overview',
@@ -96,6 +97,7 @@ class NVDSpider(scrapy.Spider):
         org_link = next((link for link in external_links if 
                          'qnap' in link.lower() or 
                          'ibm.com' in link.lower() or 
+                         'cisco.com' in link.lower() or 
                          'wordfence' in link.lower() or 
                          'microsoft.com' in link.lower()), None)
         
