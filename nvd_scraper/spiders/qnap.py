@@ -51,7 +51,7 @@ class QNAPAdvisorySpider(scrapy.Spider):
             for row in product_rows:
                 affected_product = row.css('td:nth-child(1)::text').get().strip()
                 fixed_version = row.css('td:nth-child(2)::text').get().strip()
-                affected_products_and_versions.append(f'Affected Product="{affected_product}" Fixed version="{fixed_version}"')
+                affected_products_and_versions.append(f'"{affected_product}" fix-version="{fixed_version}"')
 
             scraped_item = {
                 'cve_id': item['cve_id'],
