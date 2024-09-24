@@ -5,6 +5,7 @@ from nvd_scraper.spiders.qnap import QNAPAdvisorySpider
 from nvd_scraper.spiders.wordfence import WordFenceVulnerabilitySpider
 from nvd_scraper.spiders.microsoft import MicrosoftVulnerabilitySpider
 from nvd_scraper.spiders.cisco import CiscoAdvisorySpider
+from nvd_scraper.spiders.firefox import MozillaSecurityAdvisorySpider  
 
 def run_second_level_scraping():
     process = CrawlerProcess()
@@ -13,6 +14,7 @@ def run_second_level_scraping():
     process.crawl(WordFenceVulnerabilitySpider)
     process.crawl(MicrosoftVulnerabilitySpider)
     process.crawl(CiscoAdvisorySpider)
+    process.crawl(MozillaSecurityAdvisorySpider)
     process.start()
 
 if __name__ == "__main__":

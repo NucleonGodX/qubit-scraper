@@ -77,7 +77,7 @@ class MicrosoftVulnerabilitySpider(scrapy.Spider):
         
         # Extract affected products
         affected_products = sel_response.css('div[data-automation-key="product"]::text').getall()
-        affected_products = [f"Affected Product: {product.strip()}" for product in affected_products if product.strip()]
+        affected_products = [f"{product.strip()}" for product in affected_products if product.strip()]
         self.logger.info(f"Extracted affected products: {affected_products}")
         
         # Extract recommendations

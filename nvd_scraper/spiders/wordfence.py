@@ -46,9 +46,7 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
         software_slug = response.css('tr:contains("Software Slug") td::text').get().strip()
 
         affected_products = [
-            f"Affected Product: {software_slug}",
-            f"Affected Version: {', '.join(affected_versions)}",
-            f"Fixed Version: {', '.join(patched_versions)}"
+            f"{software_slug} version: {', '.join(affected_versions)}",
         ]
 
         recommendations = response.css('tr:contains("Remediation") td::text').get()
