@@ -8,7 +8,7 @@ class MozillaSecurityAdvisorySpider(scrapy.Spider):
     name = 'mozilla_security_advisory'
     start_urls = ['https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/']
     
-    def __init__(self, versions_to_scrape=1, *args, **kwargs):
+    def __init__(self, versions_to_scrape=10, *args, **kwargs):
         super(MozillaSecurityAdvisorySpider, self).__init__(*args, **kwargs)
         self.items = []
         self.versions_to_scrape = int(versions_to_scrape)
@@ -70,11 +70,19 @@ class MozillaSecurityAdvisorySpider(scrapy.Spider):
             yield scraped_item
 
     def format_date(self, date_string):
+        if not date_string:
+            return None
         try:
-            date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y")
-            return date_obj.strftime("%B %d, %Y; %I:%M:%S %p -0400")
+            # First, try to parse the input date string as "September 03, 2024; 12:00:00 AM -0400"
+            date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y; %I:%M:%S %p -0400")
+            return date_obj.strftime("%d/%m/%Y")
         except ValueError:
-            return date_string  # Return the original string if parsing fails
+            try:
+                # If that fails, try to parse it as "%B %d, %Y"
+                date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y")
+                return date_obj.strftime("%d/%m/%Y")
+            except ValueError:
+                return date_string  # Return the original string if parsing fails
 
     def errback_httpbin(self, failure):
         self.logger.error(f"Request failed: {failure}")

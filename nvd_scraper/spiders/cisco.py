@@ -48,14 +48,16 @@ class CiscoAdvisorySpider(scrapy.Spider):
         fixed_releases_text = "\n".join(fixed_releases)
         recommendations += "\n\nFixed Releases:\n" + fixed_releases_text
 
-        affected_products = ' '.join(response.css('div#vulnerableproducts p::text').getall()).strip()
+        # Extract affected products as an array with "affected product:" prefix
+        affected_products = response.css('div#vulnerableproducts ul li::text').getall()
+        affected_products = [f"{product.strip()}" for product in affected_products if product.strip()]
 
         scraped_item = {
             'cve_id': item.get('cve_id'),
-            'published_date': item.get('published_date'),
+            'published_date': self.format_date(item.get('published_date')),
             'description': "Cisco Security Advisory",
             'org_link': response.url,
-            'release_date': item.get('release_date'),
+            'release_date': self.format_date(item.get('release_date')),
             'severity': severity,
             'summary': summary,
             'affected_products': affected_products,
@@ -65,6 +67,21 @@ class CiscoAdvisorySpider(scrapy.Spider):
         self.items.append(scraped_item)
         self.logger.info(f"Scraped item for CVE-ID: {scraped_item['cve_id']}")
         yield scraped_item
+
+    def format_date(self, date_string):
+        if not date_string:
+            return None
+        try:
+            # First, try to parse the input date string as "September 03, 2024; 12:00:00 AM -0400"
+            date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y; %I:%M:%S %p -0400")
+            return date_obj.strftime("%d/%m/%Y")
+        except ValueError:
+            try:
+                # If that fails, try to parse it as "%B %d, %Y"
+                date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y")
+                return date_obj.strftime("%d/%m/%Y")
+            except ValueError:
+                return date_string  # Return the original string if parsing fails
 
     def errback_httpbin(self, failure):
         self.logger.error(f"Request failed: {failure}")

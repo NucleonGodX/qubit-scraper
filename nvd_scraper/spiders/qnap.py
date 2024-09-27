@@ -3,6 +3,7 @@ import json
 from w3lib.html import remove_tags
 from scrapy.http import HtmlResponse
 import requests
+from datetime import datetime
 
 class QNAPAdvisorySpider(scrapy.Spider):
     name = 'qnap_advisory'
@@ -39,6 +40,7 @@ class QNAPAdvisorySpider(scrapy.Spider):
             html_response = HtmlResponse(url=item['org_link'], body=response.content, encoding='utf-8')
             
             release_date = html_response.css('p.fs-6.mb-0::text').re_first(r'Release date : (.+)')
+            release_date = self.format_date(release_date)
             severity = html_response.css('div.w-md-auto h4::text').get()
             
             summary = self.extract_section(html_response, 'Summary')
@@ -53,9 +55,11 @@ class QNAPAdvisorySpider(scrapy.Spider):
                 fixed_version = row.css('td:nth-child(2)::text').get().strip()
                 affected_products_and_versions.append(f'"{affected_product}" fix-version="{fixed_version}"')
 
+            published_date = self.format_date(item['published_date'])
+
             scraped_item = {
                 'cve_id': item['cve_id'],
-                'published_date': item['published_date'],
+                'published_date': published_date,
                 'description': description,
                 'org_link': item['org_link'],
                 'release_date': release_date,
@@ -80,6 +84,22 @@ class QNAPAdvisorySpider(scrapy.Spider):
                 break
             content.append(element.get())
         return remove_tags(''.join(content)).strip()
+
+    def format_date(self, date_string):
+        try:
+            # Try parsing with different formats
+            for fmt in ("%Y-%m-%d", "%B %d, %Y"):
+                try:
+                    date_object = datetime.strptime(date_string, fmt)
+                    return date_object.strftime("%d/%m/%Y")
+                except ValueError:
+                    continue
+            
+            # If no format matches, raise an exception
+            raise ValueError(f"Unable to parse date: {date_string}")
+        except Exception as e:
+            self.logger.error(f"Error parsing date: {date_string}. Error: {str(e)}")
+            return date_string
 
     def closed(self, reason):
         with open('data/qnap_advisories_output.json', 'w') as f:

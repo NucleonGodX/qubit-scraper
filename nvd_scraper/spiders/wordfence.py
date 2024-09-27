@@ -69,10 +69,17 @@ class WordFenceVulnerabilitySpider(scrapy.Spider):
 
     def format_date(self, date_string):
         try:
+            # First, try to parse the input date string
             date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y")
-            return date_obj.strftime("%B %d, %Y; %I:%M:%S %p -0400")
+            # Then, format it to the desired output format
+            return date_obj.strftime("%d/%m/%Y")
         except ValueError:
-            return date_string  # Return the original string if parsing fails
+            # If the input format is different, try to parse it as "September 03, 2024; 12:00:00 AM -0400"
+            try:
+                date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y; %I:%M:%S %p -0400")
+                return date_obj.strftime("%d/%m/%Y")
+            except ValueError:
+                return date_string  # Return the original string if parsing fails
 
     def errback_httpbin(self, failure):
         self.logger.error(f"Request failed: {failure}")
