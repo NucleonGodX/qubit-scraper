@@ -83,12 +83,16 @@ class MicrosoftVulnerabilitySpider(scrapy.Spider):
         # Extract recommendations
         recommendations = self.safe_extract(sel_response, 'div.root-144::text')
         
+        # Convert published_date to dd/mm/yyyy format
+        published_date = item.get('published_date')
+        formatted_date = self.format_date(published_date)
+        
         scraped_item = {
             'cve_id': item.get('cve_id'),
-            'published_date': item.get('published_date'),
+            'published_date': formatted_date,
             'description': "Microsoft",
             'org_link': response.url,
-            'release_date': item.get('published_date'),
+            'release_date': formatted_date,
             'severity': severity,
             'summary': summary,
             'affected_products': affected_products,
@@ -113,6 +117,14 @@ class MicrosoftVulnerabilitySpider(scrapy.Spider):
         except Exception as e:
             self.logger.error(f"Error extracting with selector '{selector}': {str(e)}")
             return None
+
+    def format_date(self, date_string):
+        try:
+            date_object = datetime.strptime(date_string, "%Y-%m-%d")
+            return date_object.strftime("%d/%m/%Y")
+        except ValueError:
+            self.logger.error(f"Error parsing date: {date_string}")
+            return date_string
 
     def closed(self, reason):
         self.driver.quit()

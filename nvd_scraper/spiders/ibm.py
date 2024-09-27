@@ -59,10 +59,10 @@ class IBMVulnerabilitySpider(scrapy.Spider):
 
         scraped_item = {
             'cve_id':  item.get('cve_id'),
-            'published_date': self.format_date(published_date) if published_date else item.get('published_date'),
+            'published_date': self.format_date(published_date) if published_date else self.format_date(item.get('published_date')),
             'description': "IBM",
             'org_link': response.url,
-            'release_date': self.format_date(published_date) if published_date else item.get('published_date'),
+            'release_date': self.format_date(published_date) if published_date else self.format_date(item.get('release_date')),
             'severity': severity or item.get('severity'),
             'summary': summary or item.get('summary'),
             'affected_products': affected_products,
@@ -110,11 +110,24 @@ class IBMVulnerabilitySpider(scrapy.Spider):
         return "Medium"
 
     def format_date(self, date_string):
+        if not date_string:
+            return None
         try:
-            date_obj = datetime.strptime(date_string.strip(), "%d %b %Y")
-            return date_obj.strftime("%B %d, %Y; %I:%M:%S %p -0400")
+            # First, try to parse the input date string as "September 03, 2024; 12:00:00 AM -0400"
+            date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y; %I:%M:%S %p -0400")
+            return date_obj.strftime("%d/%m/%Y")
         except ValueError:
-            return date_string  # Return the original string if parsing fails
+            try:
+                # If that fails, try to parse it as "%B %d, %Y"
+                date_obj = datetime.strptime(date_string.strip(), "%B %d, %Y")
+                return date_obj.strftime("%d/%m/%Y")
+            except ValueError:
+                try:
+                    # If that fails, try to parse it as "%d %b %Y"
+                    date_obj = datetime.strptime(date_string.strip(), "%d %b %Y")
+                    return date_obj.strftime("%d/%m/%Y")
+                except ValueError:
+                    return date_string  # Return the original string if parsing fails
 
     def errback_httpbin(self, failure):
         self.logger.error(f"Request failed: {failure}")

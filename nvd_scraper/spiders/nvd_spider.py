@@ -17,7 +17,7 @@ class NVDSpider(scrapy.Spider):
         self.logger.setLevel(logging.INFO)
         self.results = []
         self.page_count = 0
-        self.max_pages = 1
+        self.max_pages = 1430
         self.target_orgs = ['ibm', 'qnap', 'word', 'adobe', 'microsoft', 'windows', "mac", "apple", "cisco"]  # Convert these to lowercase
 
     def start_requests(self):
