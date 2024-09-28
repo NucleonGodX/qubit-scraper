@@ -8,7 +8,7 @@ class MozillaSecurityAdvisorySpider(scrapy.Spider):
     name = 'mozilla_security_advisory'
     start_urls = ['https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/']
     
-    def __init__(self, versions_to_scrape=10, *args, **kwargs):
+    def __init__(self, versions_to_scrape=1, *args, **kwargs):
         super(MozillaSecurityAdvisorySpider, self).__init__(*args, **kwargs)
         self.items = []
         self.versions_to_scrape = int(versions_to_scrape)
