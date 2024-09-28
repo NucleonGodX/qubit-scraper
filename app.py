@@ -96,7 +96,8 @@ def run_full_scraper():
     microsoft_file='data/microsoft_vulnerabilities_output.json'
     cisco_file='data/cisco_advisories_output.json'
     firefox_file='data/mozilla_security_advisory_output.json'
-    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file, microsoft_file, cisco_file, firefox_file)
+    adobe_file='data/adobe_security_advisory_output.json'
+    combined_data = combine_json_files('data/vulnerabilities_output.json', ibm_file, qnap_file, wordfence_file, microsoft_file, cisco_file, firefox_file, adobe_file)
     
     insert_many_vulnerabilities(combined_data)
     return len(combined_data)
