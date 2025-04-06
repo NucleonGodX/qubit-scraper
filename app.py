@@ -9,10 +9,10 @@ from multiprocessing import Process
 
 app = Flask(__name__)
 
-url = os.getenv('MONGODB_URL', '***REMOVED***/?')
-db_name = os.getenv('DB_NAME', 'arvrs')
-collection_name = os.getenv('COLLECTION_NAME', 'vulnerability')
-
+url = os.getenv('MONGODB_URL', 'private')
+db_name = os.getenv('DB_NAME', 'private')
+collection_name = os.getenv('COLLECTION_NAME', 'private')
+#
 def run_first_level_scraping():
     """Run the first level of scraping to generate the JSON file with links."""
     process = CrawlerProcess()

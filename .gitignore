@@ -1,3 +1,4 @@
 venv
 nvd_scraper/__pycache__/
 nvd_scraper/spiders/__pycache__/
+__pycache__
